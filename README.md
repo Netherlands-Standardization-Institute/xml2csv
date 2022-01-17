@@ -29,7 +29,7 @@ reader = open('input.xml', 'r', encoding='utf-8')
 writer = DictWriter(open('output.csv', 'a'), delimiter=',', lineterminator='\n', fieldnames=IcsProcessor.fieldnames)
 
 p = IcsProcessor(reader, writer)
-
+p.process()
 ```
 
 To implement your own parser: 
