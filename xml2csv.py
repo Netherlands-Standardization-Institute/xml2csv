@@ -38,13 +38,12 @@ class Processor(ABC):
         data = self.reader.read()
         data = self.converter(data)
 
-        if data:    
-            # add column with the job id
-            #if self.job_id:    
-            #    self.fieldnames.append('id')
-            #    data = [dict(item, **{'id':self.job_id}) for item in data]
-            
-            self.writer.writerows(data)
+        if data:
+            try:           
+                self.writer.writerows(data)
+            except Exception as e:
+                print(e)
+                
     
     @abstractmethod
     def converter(self, data):
