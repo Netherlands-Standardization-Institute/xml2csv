@@ -628,7 +628,7 @@ class SectionProcessor(Processor):
 class MathMLProcessor(Processor):
     """A class to extract MathML."""
     
-    fieldnames = ['mathml']
+    fieldnames = ['id', 'math']
     """
     Column names.
     
