@@ -350,28 +350,31 @@ class StdRefProcessor(Processor):
         secretariat = secretariat.getText() if secretariat else None
 
         ### Standard Identification Block
+        originator = doc_type = doc_nr = part_nr = edition = version = year = None
+        
         sib = soup.find('std-ident')        
         
-        originator = sib.find('originator')
-        originator = originator.getText() if originator else None
-    
-        doc_type = sib.find('doc-type')
-        doc_type = doc_type.getText() if doc_type else None
-    
-        doc_nr = sib.find('doc-number')
-        doc_nr = doc_nr.getText() if doc_nr else None
-    
-        part_nr = sib.find('part-number')
-        part_nr = part_nr.getText() if part_nr else None
-    
-        edition = sib.find('edition')
-        edition = edition.getText() if edition else None
-    
-        version = sib.find('version')
-        version = version.getText() if version else None
-    
-        year = sib.find('year')
-        year = year.getText() if year else None
+        if sib: 
+            originator = sib.find('originator')
+            originator = originator.getText() if originator else None
+        
+            doc_type = sib.find('doc-type')
+            doc_type = doc_type.getText() if doc_type else None
+        
+            doc_nr = sib.find('doc-number')
+            doc_nr = doc_nr.getText() if doc_nr else None
+        
+            part_nr = sib.find('part-number')
+            part_nr = part_nr.getText() if part_nr else None
+        
+            edition = sib.find('edition')
+            edition = edition.getText() if edition else None
+        
+            version = sib.find('version')
+            version = version.getText() if version else None
+        
+            year = sib.find('year')
+            year = year.getText() if year else None
 
         ### Document Identification Block
         sdo = proj_id = doc_lang = rel_version = urn = None
@@ -557,7 +560,8 @@ class TitleProcessor(Processor):
             intro = i.find('intro')
             intro = intro.getText() if intro else None
             
-            main = i.find('main').getText()
+            main = i.find('main')
+            main = main.getText() if main else None
             
             compl = i.find('compl')
             compl = compl.getText() if compl else None
