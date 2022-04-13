@@ -80,16 +80,16 @@ class RequirementsProcessor(Processor):
                     section_id = "-"
                 single_output = build_output(p.get_text(), section_id)
                 output.append(single_output)
-
-                
-                
-
         return output
 
     def process(self):
         with open(self.input_file, "r", encoding="utf-8") as f:
             self.reader = f
             return super().process()
+    def link_potential_extras(self, uid, requirement_node, section_id, norm_id): 
+        pass 
+    
+
 
 
 if __name__ == "__main__":
