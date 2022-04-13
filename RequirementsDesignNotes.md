@@ -26,6 +26,6 @@ The following information elements are extracted:
 ### CSV Format
 The format of the CSV output file is the following: 
 
-    Req_UUID,AdditionInfo_Type, AdditionalInfo_UUID, StandardID, SectionID, ID, AdditionalInfo_UUID.  
+    Req_UUID,AdditionInfo_Type, AdditionalInfo_UUID, StandardID, SectionID, ID, AdditionalInfo_Body.  
 
 The additonalInfo UUID is empty for references to norms. 
