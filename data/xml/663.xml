@@ -1,0 +1,1791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE standard SYSTEM "../../Schema/ISOSTS_1.1/ISOSTS.dtd">
+<standard xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:mml="http://www.w3.org/1998/Math/MathML" xmlns:tbx="urn:iso:std:iso:30042:ed-1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" dtd-version="1.1" xml:lang="en">
+  <front>
+    <nat-meta originator="NEN">
+      <title-wrap xml:lang="nl">
+        <intro>Water</intro>
+        <main>Grondslagen van en algemene richtlijnen voor het uitvoeren van doorstroomanalyses</main>
+        <full>Water - Grondslagen van en algemene richtlijnen voor het uitvoeren van doorstroomanalyses</full>
+      </title-wrap>
+      <title-wrap xml:lang="en">
+        <intro>Water</intro>
+        <main>General prescriptions for flow-through analyses</main>
+        <full>Water — General prescriptions for flow-through analyses</full>
+      </title-wrap>
+      <doc-ident>
+        <sdo>NEN</sdo>
+        <proj-id>663</proj-id>
+        <language>nl</language>
+        <release-version />
+      </doc-ident>
+      <std-ident>
+        <originator>NEN</originator>
+        <doc-type />
+        <doc-number />
+        <edition />
+        <version />
+      </std-ident>
+      <content-language>nl</content-language>
+      <std-ref type="undated">NPR 6650</std-ref>
+      <doc-ref />
+      <pub-date>januari 1991</pub-date>
+      <release-date />
+
+      <comm-ref>Normcommissie 390 147 "Waterkwaliteit"</comm-ref>
+      <secretariat>NEN</secretariat>
+      <ics>UDC 543.3</ics>
+
+      <permissions>
+        <copyright-statement xml:lang="en" />
+        <copyright-statement xml:lang="nl">
+          <styled-content style-type="para">Behoudens uitzondering door de wet gesteld mag zonder schriftelijke toestemming van het Nederlands Normalisatie-instituut niets uit deze uitgave worden verveelvoudigd en/of openbaar gemaakt door middel van fotokopie, microfilm, opslag in computerbestanden of anderszins, hetgeen ook van toepassing is op gehele of gedeeltelijke bewerking.</styled-content>
+          <styled-content style-type="para">Het Nederlands Normalisatie-instituut is met uitsluiting van ieder ander gerechtigd de door derden verschuldigde vergoedingen voor verveelvoudiging te innen en/of daartoe in en buiten rechte op te treden, voor zover deze bevoegdheid niet is overgedragen c.q. rechtens toekomt aan de Stichting Reprorecht.</styled-content>
+        </copyright-statement>
+        <copyright-year>1991</copyright-year>
+        <copyright-holder>Nederlands Normalisatie-instituut</copyright-holder>
+        <copyright-holder>Kalfjeslaan 2, Postbus 5059, 2600 GB Delft,</copyright-holder>
+        <copyright-holder>telefoon (015) 690 390, telex 38144, telefax (015) 690 190, Postbank 25301</copyright-holder>
+      </permissions>
+      <custom-meta-group>
+        <custom-meta xml:lang="en" xlink:type="simple">
+          <meta-name>disclaimer</meta-name>
+          <meta-value />
+        </custom-meta>
+        <custom-meta xml:lang="nl" xlink:type="simple">
+          <meta-name>disclaimer</meta-name>
+          <meta-value>Hoewel bij deze uitgave de uiterste zorg is nagestreefd, kunnen fouten en onvolledigheden niet geheel worden uitgesloten. Het Nederlands Normalisatie-instituut en/of de leden van de commissies aanvaarden derhalve geen enkele aansprakelijkheid, ook niet voor directe of indirecte schade, ontstaan door of verband houdende met toepassing van door het Nederlands Normalisatie-instituut gepubliceerde uitgaven.</meta-value>
+        </custom-meta>
+      </custom-meta-group>
+    </nat-meta>
+  </front>
+  <body>
+    <sec id="sec_1" sec-type="scope">
+      <label>1</label>
+      <title>Onderwerp en toepassingsgebied</title>
+      <p>Deze praktijkrichtlijn beschrijft de grondslagen van methoden voor doorstroomanalyse, geeft algemene richtlijnen voor het uitvoeren van bepalingen van gehalten aan componenten in waterige oplossingen met behulp van doorstroomanalysesystemen en geeft aanbevelingen voor de opbouw van dergelijke systemen.</p>
+    </sec>
+    <sec id="sec_2" sec-type="terms">
+      <label>2</label>
+      <title>Termen en definities</title>
+      <term-sec id="sec_2.1">
+        <label>2.1</label>
+        <tbx:termEntry id="term_2.1">
+          <tbx:langSet xml:lang="nl">
+            <tbx:definition>Wijze van uitvoering van een analytisch-chemische en/of fysische bepaling, waarbij het te analyseren monster in een continue vloeistofstroom naar een detector wordt gevoerd</tbx:definition>
+            <tbx:note>Door gedurende het transport reagens toe te voegen kan het analysemonster desgewenst chemisch worden omgezet. De transportleiding fungeert dan tevens als reactor. Ook is het mogelijk het analysemonster binnen het analysesysteem te onderwerpen aan fysische bewerkingen zoals dialyse, extractie, verwarming en dergelijke.</tbx:note>
+            <tbx:tig>
+              <tbx:term>
+                <italic>doorstroomanalyse</italic>
+              </tbx:term>
+              <tbx:partOfSpeech value="noun" />
+            </tbx:tig>
+          </tbx:langSet>
+        </tbx:termEntry>
+      </term-sec>
+      <term-sec id="sec_2.2">
+        <label>2.2</label>
+        <tbx:termEntry id="term_2.2">
+          <tbx:langSet xml:lang="nl">
+            <tbx:definition>Vorm van doorstroomanalyse waarbij de vloeistofstroom is opgedeeld in segmenten die onderling zijn gescheiden door gasbellen.</tbx:definition>
+            <tbx:note>Meestal wordt voor de segmentering gebruik gemaakt van luchtbellen; in sommige gevallen is echter toepassing van inert gas (bijv. stikstof) noodzakelijk.</tbx:note>
+            <tbx:tig>
+              <tbx:term>
+                <italic>"continuous flow" analyse</italic>
+              </tbx:term>
+              <tbx:partOfSpeech value="noun" />
+              <tbx:normativeAuthorization value="preferredTerm" />
+            </tbx:tig>
+            <tbx:tig>
+              <tbx:term>
+                <italic>CFA</italic>
+              </tbx:term>
+              <tbx:partOfSpeech value="noun" />
+              <tbx:normativeAuthorization value="admittedTerm" />
+              <tbx:termType value="abbreviation" />
+            </tbx:tig>
+          </tbx:langSet>
+        </tbx:termEntry>
+      </term-sec>
+      <term-sec id="sec_2.3">
+        <label>2.3</label>
+        <tbx:termEntry id="term_2.3">
+          <tbx:langSet xml:lang="nl">
+            <tbx:definition>Vorm van doorstroomanalyse waarbij de vloeistofstroom niet is gesegmenteerd.</tbx:definition>
+            <tbx:tig>
+              <tbx:term>
+                <italic>"flow injection" analyse</italic>
+              </tbx:term>
+              <tbx:partOfSpeech value="noun" />
+              <tbx:normativeAuthorization value="preferredTerm" />
+            </tbx:tig>
+            <tbx:tig>
+              <tbx:term>
+                <italic>FIA</italic>
+              </tbx:term>
+              <tbx:partOfSpeech value="noun" />
+              <tbx:normativeAuthorization value="admittedTerm" />
+              <tbx:termType value="abbreviation" />
+            </tbx:tig>
+          </tbx:langSet>
+        </tbx:termEntry>
+      </term-sec>
+      <term-sec id="sec_2.4">
+        <label>2.4</label>
+        <tbx:termEntry id="term_2.4">
+          <tbx:langSet xml:lang="nl">
+            <tbx:definition>De tijd die het monster nodig heeft om het doorstroomanalysesysteem of een deel daarvan te doorlopen.</tbx:definition>
+            <tbx:tig>
+              <tbx:term>
+                <italic>verblijftijd</italic>
+              </tbx:term>
+              <tbx:partOfSpeech value="noun" />
+            </tbx:tig>
+          </tbx:langSet>
+        </tbx:termEntry>
+      </term-sec>
+
+      <term-sec id="sec_2.5">
+        <label>2.5</label>
+        <tbx:termEntry id="term_2.5">
+          <tbx:langSet xml:lang="nl">
+            <tbx:definition>De spreiding van de in het monster voorkomende componenten en daaruit gevormde reactieprodukten in de longitudinale richting van de vloeistofstroom.</tbx:definition>
+            <tbx:note>De mate van dispersie wordt bepaald door het stromingsgedrag van de vloeistof en hangt daarom onder meer af van de stroomsnelheid en de viscositeit van de vloeistof, alsmede van de middellijn en lengte van de transportleidingen. Ook de inwendige vorm van de verbindingsstukken en de geometrie van het doorstroomanalysesysteem kunnen een aanmerkelijke invloed op de dispersie hebben. Daarnaast zullen de diffusieconstanten van de opgeloste componenten een rol spelen.</tbx:note>
+            <tbx:tig>
+              <tbx:term>
+                <italic>dispersie</italic>
+              </tbx:term>
+              <tbx:partOfSpeech value="noun" />
+            </tbx:tig>
+          </tbx:langSet>
+        </tbx:termEntry>
+      </term-sec>
+
+      <term-sec id="sec_2.6">
+        <label>2.6</label>
+        <tbx:termEntry id="term_2.6">
+          <tbx:langSet xml:lang="nl">
+            <tbx:definition>Het proces waarbij componenten uit een monster dat een doorstroomanalysesysteem doorloopt, ongewenst in het daarop volgende monster komen.</tbx:definition>
+            <tbx:note>In een doorstroomanalysesysteem wordt "carry-over" hoofdzakelijk veroorzaakt door dispersie. Dispersie, en daarmee "carry-over", wordt bij CFA verminderd door het toepassen van gasbelsegmentering en bij FIA door het vermijden van dode volumes in het systeem.</tbx:note>
+            <tbx:tig>
+              <tbx:term>
+                <italic>"carry-over"</italic>
+              </tbx:term>
+              <tbx:partOfSpeech value="noun" />
+            </tbx:tig>
+          </tbx:langSet>
+        </tbx:termEntry>
+      </term-sec>
+      <term-sec id="sec_2.7">
+        <label>2.7</label>
+        <tbx:termEntry id="term_2.7">
+          <tbx:langSet xml:lang="nl">
+            <tbx:definition>De toestand waarbij gedurende een bepaalde tijd geen verandering in het detectorsignaal optreedt.</tbx:definition>
+            <tbx:tig>
+              <tbx:term>
+                <italic>stationaire toestand; "steady state"</italic>
+              </tbx:term>
+              <tbx:partOfSpeech value="noun" />
+            </tbx:tig>
+          </tbx:langSet>
+        </tbx:termEntry>
+      </term-sec>
+
+      <term-sec id="sec_2.8">
+        <label>2.8</label>
+        <tbx:termEntry id="term_2.8">
+          <tbx:langSet xml:lang="nl">
+            <tbx:definition>Het detectorsignaal wanneer geen monster, maar wel alle reagentia door het systeem worden gepompt.</tbx:definition>
+            <tbx:tig>
+              <tbx:term>
+                <italic>basislijn</italic>
+              </tbx:term>
+              <tbx:partOfSpeech value="noun" />
+            </tbx:tig>
+          </tbx:langSet>
+        </tbx:termEntry>
+      </term-sec>
+
+
+      <term-sec id="sec_2.9">
+        <label>2.9</label>
+        <tbx:termEntry id="term_2.9">
+          <tbx:langSet xml:lang="nl">
+            <tbx:definition>De langzame, niet-willekeurige verandering (het "verlopen") van het detectorsignaal in de tijd.</tbx:definition>
+            <tbx:note>Drift kan zowel een chemische oorzaak (instabiliteit van de reagentia) als een hydraulische oorzaak (slijtage van de pompslangen) hebben. Er wordt onderscheid gemaakt tussen basislijndrift (het verlopen van de basislijn in de tijd) en gevoeligheidsdrift (het verlopen van de helling van de kalibratielijn).</tbx:note>
+            <tbx:tig>
+              <tbx:term>
+                <italic>drift</italic>
+              </tbx:term>
+              <tbx:partOfSpeech value="noun" />
+            </tbx:tig>
+          </tbx:langSet>
+        </tbx:termEntry>
+      </term-sec>
+
+      <term-sec id="sec_2.10">
+        <label>2.10</label>
+        <tbx:termEntry id="term_2.10">
+          <tbx:langSet xml:lang="nl">
+            <tbx:definition>De responsiecurve die wordt verkregen door het aanzuigen van een blanco-oplossing, gevolgd door het zolang aanzuigen van een monster dat een stationaire toestand wordt bereikt, waarna weer blanco-oplossing wordt aangezogen tot de oorspronkelijke basislijn wordt bereikt.</tbx:definition>
+            <tbx:note>Onderzoek aan het opgaande deel ("rise-curve") en neergaande deel ("fall-curve") van het standaardprofiel verschaft informatie betreffende de stroomkarakteristieken van een doorstroomanalysesysteem.</tbx:note>
+            <tbx:tig>
+              <tbx:term>
+                <italic>standaardprofiel</italic>
+              </tbx:term>
+              <tbx:partOfSpeech value="noun" />
+            </tbx:tig>
+          </tbx:langSet>
+        </tbx:termEntry>
+      </term-sec>
+    </sec>
+    <sec id="sec_3">
+      <label>3</label>
+      <title>Grondslagen van doorstroomanalysemethoden</title>
+      <sec id="sec_3.1">
+        <label>3.1</label>
+        <title>
+          <styled-content style-type="normal">"Continuous flow" analyse</styled-content>
+        </title>
+        <p>
+          Oorspronkelijk waren vrijwel alle toegepaste doorstroomanalysesystemen van het type CFA.
+          <break />
+          Het monster wordt hierbij door het systeem gevoerd en door gasbellen opgedeeld in kleine, afzonderlijke pakketjes. Bij CFA is de dispersie in niet-gesegmenteerde stromen vele malen groter dan in een gesegmenteerde stroom. De gasbellen vormen een barrière en gaan de spreiding van het materiaal in longitudinale richting (dispersie) tegen. Binnen elk vloeistofpakketje treedt convectie op die zorgt voor menging (zie
+          <xref ref-type="fig" rid="sec_3.1_fig_1">figuur 1</xref>
+          ). Deze wijze van menging is een langdurig proces. Toepassing van mengspiralen versnelt het mengproces (zie
+          <xref ref-type="fig" rid="sec_3.1_fig_2">figuur 2</xref>
+          ).
+        </p>
+        <fig id="sec_3.1_fig_1" position="float" orientation="portrait">
+          <label>Figuur 1</label>
+          <caption>
+            <title>Transportleiding met vloeistofpakketjes, gescheiden door gasbellen</title>
+          </caption>
+          <graphic xlink:type="simple" xlink:href="fig_1" position="float" orientation="portrait" />
+          <non-normative-note>
+            <label>
+              <italic>Toelichting</italic>
+            </label>
+            <p>De pijlen geven aan hoe binnen een vloeistofpakketje convectie optreedt die zorgt voor menging.</p>
+          </non-normative-note>
+        </fig>
+        <fig id="sec_3.1_fig_2" position="float" orientation="portrait">
+          <label>Figuur 2</label>
+          <caption>
+            <title>Menging van twee vloeistofstromen in een spiraal</title>
+          </caption>
+          <graphic xlink:type="simple" xlink:href="fig_2" position="float" orientation="portrait" />
+        </fig>
+        <p>
+          Het monster en eventuele wasvloeistof worden in het systeem gebracht door het op dezelfde wijze aan te zuigen als de reagensstroom.
+          <break />
+          Omdat het vaak ongewenst is dat gasbellen door de detector worden gevoerd, zullen deze voordat zij de detector bereiken, moeten worden verwijderd. Dit gebeurt via een ontgassing.
+          <break />
+          Ontgassingssystemen kunnen een aanzienlijke bijdrage aan de dispersie leveren omdat een niet-gesegmenteerde stroom ontstaat. Bij de huidige generatie commercieel verkrijgbare CFA-doorstroomsystemen wordt gebruik gemaakt van technieken waarbij de gasbellen zonder bezwaar door de spectrofotometer kunnen worden gevoerd (toepassing van elektronische filtering van het gasbelsignaal of van een tweekanaalsspectrofotometer).
+        </p>
+        <p>
+          <xref ref-type="fig" rid="sec_3.1_fig_3">Figuur 3</xref>
+          geeft een schematische voorstelling van de opbouw van een willekeurig klassiek CFA-systeem.
+        </p>
+        <fig id="sec_3.1_fig_3" position="float" orientation="portrait">
+          <label>Figuur 3</label>
+          <caption>
+            <title>Schematische weergave van de opbouw van een CFA-systeem</title>
+          </caption>
+          <graphic xlink:type="simple" xlink:href="fig_3" position="float" orientation="portrait" />
+          <table-wrap content-type="fig-index" position="float" orientation="portrait">
+            <table width="488">
+              <colgroup span="1">
+                <col width="10%" align="left" valign="top" span="1" />
+                <col width="90%" align="left" valign="top" span="1" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td rowspan="1" colspan="1">A —</td>
+                  <td rowspan="1" colspan="1">Pomp</td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">B —</td>
+                  <td rowspan="1" colspan="1">Spiraal</td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">C —</td>
+                  <td rowspan="1" colspan="1">Detector</td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">D —</td>
+                  <td rowspan="1" colspan="1">Ontgassing</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </fig>
+        <p>
+          <xref ref-type="fig" rid="sec_3.1_fig_4">Figuur 4</xref>
+          laat een karakteristieke registratie zien van het detectorsignaal afkomstig van een CFA-systeem waarbij gebruik wordt gemaakt van het "steady state" niveau. Het sterkste signaal wordt verkregen als wordt gemeten wanneer de "steady state" is bereikt. Bij de huidige generatie commercieel verkrijgbare CFA-doorstroomsystemen wordt gebruik gemaakt van automatische gegevensverwerking. Dit maakt het mogelijk niet langer piekhoogten op "steady state" te detecteren, maar aan de hand van de stijgsnelheid het maximale ("steady state") signaal te voorspellen.
+          <break />
+          Kenmerkend voor deze wijze van detecteren zijn de scherpe piekvormige signalen.
+        </p>
+        <fig id="sec_3.1_fig_4" position="float" orientation="portrait">
+          <label>Figuur 4</label>
+          <caption>
+            <title>Detectorsignalen bij CFA</title>
+          </caption>
+          <graphic xlink:type="simple" xlink:href="fig_4" position="float" orientation="portrait" />
+          <table-wrap content-type="fig-index" position="float" orientation="portrait">
+            <caption>
+              <title>
+                <italic>Toelichting</italic>
+              </title>
+            </caption>
+            <table width="650">
+              <colgroup span="1">
+                <col width="10%" align="left" valign="top" span="1" />
+                <col width="90%" align="left" valign="top" span="1" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td rowspan="1" colspan="1">1:</td>
+                  <td rowspan="1" colspan="1">
+                    kalibratiecyanideoplossing,
+                    <italic>ϱ</italic>
+                    (CN
+                    <sup>−</sup>
+                    ) = 25 μg/l
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">2:</td>
+                  <td rowspan="1" colspan="1">
+                    kalibratiecyanideoplossing,
+                    <italic>ϱ</italic>
+                    (CN
+                    <sup>−</sup>
+                    ) = 50 μg/l
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">3:</td>
+                  <td rowspan="1" colspan="1">
+                    kalibratiecyanideoplossing,
+                    <italic>ϱ</italic>
+                    (CN
+                    <sup>−</sup>
+                    ) = 100 μg/l
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">4:</td>
+                  <td rowspan="1" colspan="1">
+                    kalibratiecyanideoplossing,
+                    <italic>ϱ</italic>
+                    (CN
+                    <sup>−</sup>
+                    ) = 150 μg/l
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">5:</td>
+                  <td rowspan="1" colspan="1">
+                    kalibratiecyanideoplossing,
+                    <italic>ϱ</italic>
+                    (CN
+                    <sup>−</sup>
+                    ) = 200 μg/l
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">6:</td>
+                  <td rowspan="1" colspan="1">
+                    kalibratiecyanideoplossing,
+                    <italic>ϱ</italic>
+                    (CN
+                    <sup>−</sup>
+                    ) = 300 μg/l
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">7:</td>
+                  <td rowspan="1" colspan="1">blanco (driemaal)</td>
+                </tr>
+                <tr>
+                  <td colspan="2" rowspan="1">8-13: monsteroplossingen</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </fig>
+      </sec>
+      <sec id="sec_3.2">
+        <label>3.2</label>
+        <title>
+          <styled-content style-type="normal">"Flow injection" analyse</styled-content>
+        </title>
+        <p>
+          Het is gebleken dat bij een juiste dimensionering van de leidingen in een doorstroomanalysesysteem en een daaraan aangepaste stroomsnelheid, de dispersie zover kan worden teruggedrongen dat gasbelsegmentering achterwege kan blijven.
+          <break />
+          Bij dergelijke niet-gesegmenteerde systemen (FIA) wordt het monster niet aangezogen, maar na de pomp in de vorm van een monsterprop met een goed gedefinieerd volume in een dragerstroom geïnjecteerd. Door de afwezigheid van samendrukbare gasbellen, en door het feit dat de monsterprop niet door de pomp wordt gevoerd, kunnen in FIA beter reproduceerbare verblijftijden worden gerealiseerd. Hier kunnen processen, die niet volledig behoeven te verlopen, signalen opleveren die rechtstreeks met de concentraties van monsters kunnen worden gecorreleerd. Aangezien de dispersie bij een vaste geometrie van het systeem zeer reproduceerbaar is, is het ook mogelijk gebruik te maken van de concentratriegradiënten die ontstaan. In
+          <xref ref-type="fig" rid="sec_3.2_fig_5">figuur 5</xref>
+          is een schematische voorstelling van de opbouw van een FIA-systeem gegeven.
+        </p>
+        <fig id="sec_3.2_fig_5" position="float" orientation="portrait">
+          <label>Figuur 5</label>
+          <caption>
+            <title>Schematische weergave van de opbouw van een FIA-systeem</title>
+          </caption>
+          <graphic xlink:type="simple" xlink:href="fig_5" position="float" orientation="portrait" />
+          <table-wrap content-type="fig-index" position="float" orientation="portrait">
+            <table width="488">
+              <colgroup span="1">
+                <col width="10%" align="left" valign="top" span="1" />
+                <col width="90%" align="left" valign="top" span="1" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td rowspan="1" colspan="1">A —</td>
+                  <td rowspan="1" colspan="1">Pomp</td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">B —</td>
+                  <td rowspan="1" colspan="1">Injectiekraan</td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">C —</td>
+                  <td rowspan="1" colspan="1">Spiraal</td>
+                </tr>
+                <tr>
+                  <td rowspan="1" colspan="1">D —</td>
+                  <td rowspan="1" colspan="1">Detector</td>
+                </tr>
+              </tbody>
+            </table>
+          </table-wrap>
+        </fig>
+        <p>
+          Bij FIA is altijd sprake van piekvormige signalen. De hoogte van de piek is een functie van de concentratie van de te bepalen component in het monster, van het geïnjecteerde monstervolume en van de verhouding tussen reagens- en dragerstroomdebiet.
+          <break />
+          Vaak wordt voor de karakterisering gebruik gemaakt van een factor
+          <italic>D</italic>
+          . Deze is gedefinieerd als de verhouding tussen het maximaal haalbare signaal (
+          <italic>S</italic>
+          <sub>m</sub>
+          ) en het werkelijk gemeten piekmaximum (
+          <italic>S</italic>
+          <sub>p</sub>
+          ); beide waarden gemeten met een oplossing van dezelfde concentratie:
+        </p>
+        <disp-formula>
+          <mml:math id="mml_m1" overflow="scroll">
+            <mml:mrow>
+              <mml:mi>D</mml:mi>
+              <mml:mspace width=".2em" />
+              <mml:mo>=</mml:mo>
+              <mml:mspace width=".2em" />
+              <mml:msub>
+                <mml:mi>S</mml:mi>
+                <mml:mi fontstyle="normal">m</mml:mi>
+              </mml:msub>
+              <mml:mo>/</mml:mo>
+              <mml:msub>
+                <mml:mi>S</mml:mi>
+                <mml:mi fontstyle="normal">p</mml:mi>
+              </mml:msub>
+            </mml:mrow>
+          </mml:math>
+          <inline-graphic xlink:type="simple" xlink:href="mml_m1" />
+        </disp-formula>
+        <p>
+          <italic>S</italic>
+          <sub>m</sub>
+          is eenvoudig te bepalen door in een FIA-systeem (bijv. volgens
+          <xref ref-type="fig" rid="sec_3.2_fig_5">figuur 5</xref>
+          ) de dragerstroom te vervangen door te analyseren oplossing.
+        </p>
+        <p>
+          <xref ref-type="fig" rid="sec_3.3_fig_6">Figuur 6</xref>
+          toont de geregistreerde piekvormige signalen bij verschillende monstergroottes. Uit deze figuur blijkt dat
+          <italic>S</italic>
+          <sub>p</sub>
+          , en daarmee de waarde van
+          <italic>D</italic>
+          , bij een bepaald doorstroomsysteem afhangt van de gekozen monstergrootte. Tevens is duidelijk dat boven een bepaalde waarde toeneming van de monstergrootte slechts leidt tot een geringe toeneming van de signaalgrootte terwijl de tijd, die verloopt tot het maximum wordt bereikt, toeneemt. De monsterfrequentie neemt daardoor af.
+        </p>
+      </sec>
+      <sec id="sec_3.3">
+        <label>3.3</label>
+        <title>
+          <styled-content style-type="normal">Algemeen</styled-content>
+        </title>
+        <p>
+          Het meetgebied van doorstroomanalysesystemen kan worden aangepast door variatie in de verhouding van de debieten van drager/monsterstroom en reagensstroom. In feite wordt daarbij de mate van verdunning veranderd. Ook kan het meetgebied worden aangepast door variatie van monstergrootte. De monsterfrequentie bij doorstroomsystemen, en in het bijzonder bij FIA, is zeer hoog. In het ideale geval kunnen alle bewerkingen die een monster moet ondergaan "on-line" worden uitgevoerd. De grote populariteit van doorstroommethoden is hieraan, en aan de eenvoudige mogelijkheden deze systemen te automatiseren, te danken.
+          <break />
+          Doorstroomanalysesystemen worden in het algemeen modulair opgebouwd; dit geeft de gebruiker de mogelijkheid het systeem aan te passen aan de gewenste analyse.
+        </p>
+        <p>
+          Hoewel er in de literatuur doorstroomanalysesystemen beschreven zijn die aspecten van CFA en FIA in zich verenigen, is ter verduidelijking in
+          <xref ref-type="table" rid="sec_3.3_tab_1">tabel 1</xref>
+          een overzicht gegeven van een aantal karakteristieke aspecten van "zuivere" CFA- resp. FIA-systemen.
+        </p>
+        <fig id="sec_3.3_fig_6" position="float" orientation="portrait">
+          <label>Figuur 6</label>
+          <caption>
+            <title>Detectorsignalen bij FIA bij verschillende monstergroottes</title>
+          </caption>
+          <graphic xlink:type="simple" xlink:href="fig_6" position="float" orientation="portrait" />
+          <non-normative-note>
+            <label>
+              <italic>Toelichting</italic>
+            </label>
+            <p>
+              Het detectorsignaal
+              <italic>S</italic>
+              op de verticale as is uitgezet tegen de tijd
+              <italic>t</italic>
+              op de horizontale as.
+              <italic>S</italic>
+              <sub>m</sub>
+              is het maximaal haalbare signaal en
+              <italic>S</italic>
+              <sub>p1</sub>
+              tot en met
+              <italic>S</italic>
+              <sub>p4</sub>
+              zijn de piekmaxima bij toenemende monstervolumes;
+              <italic>t</italic>
+              <sub>i</sub>
+              is het tijdstip van injecteren van monsters. Op de tweede verticale as is de factor
+              <italic>D</italic>
+              uitgezet als functie van het piekmaximum.
+            </p>
+          </non-normative-note>
+        </fig>
+        <table-wrap id="sec_3.3_tab_1" position="float" orientation="portrait">
+          <label>Tabel 1</label>
+          <caption>
+            <title>Vergelijking van een aantal karakteristieke aspecten van CFA- en FIA-systemen</title>
+          </caption>
+          <table style="border-collapse:collapse;" width="550" frame="box" rules="cols" cellspacing="0" cellpadding="0">
+            <colgroup span="1">
+              <col width="40%" align="left" valign="top" span="1" />
+              <col width="20%" align="left" valign="top" span="1" />
+              <col width="40%" align="left" valign="top" span="1" />
+            </colgroup>
+            <thead style="border-bottom:solid 1px;">
+              <tr>
+                <th style="padding:0 3.80px 0 3.80px;" align="left" rowspan="1" colspan="1">
+                  <styled-content style-type="normal">aspect</styled-content>
+                </th>
+                <th style="padding:0 3.80px 0 3.80px;" align="left" rowspan="1" colspan="1">
+                  <styled-content style-type="normal">CFA</styled-content>
+                </th>
+                <th style="padding:0 3.80px 0 3.80px;" align="left" rowspan="1" colspan="1">
+                  <styled-content style-type="normal">FIA</styled-content>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">reactie-/verblijftijd</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">&gt; 1 min</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">&lt; 1 min</td>
+              </tr>
+              <tr>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">monsterintroductie</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">aanzuigen</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">injecteren</td>
+              </tr>
+              <tr>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">binnenmiddellijn van gebruikte leidingen</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">ca. 1,5 mm</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">ca. 0,5 mm</td>
+              </tr>
+              <tr>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">gebruik wasvloeistof</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">noodzakelijk</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">dragerstroom fungeert als "wasvloeistof"</td>
+              </tr>
+              <tr>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">monstervolume nodig voor analyse</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">&gt; 0,5 ml</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">
+                  wordt bepaald door het volume dat nodig is om de injectiekraan te spoelen en te vullen (injectie- volume doorgaans &lt; 30
+                  <italic>μ</italic>
+                  I)
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">invloed van de lengte van de reactorbuis op signaalgrootte</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">niet of nauwelijks</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">afnemende signaalgrootte bij toenemende lengte van de reactorbuis</td>
+              </tr>
+              <tr>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">aansluiting op detectiesysteem</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">doorgaans via ontgassing</td>
+                <td style="padding:0 3.80px 0 3.80px;" rowspan="1" colspan="1">rechtstreeks</td>
+              </tr>
+            </tbody>
+          </table>
+          <graphic xlink:type="simple" xlink:href="tab_1" position="float" orientation="portrait" />
+
+        </table-wrap>
+      </sec>
+    </sec>
+    <sec id="sec_4">
+      <label>4</label>
+      <title>Apparatuur</title>
+      <sec id="sec_4.1">
+        <label>4.1</label>
+        <title>
+          <styled-content style-type="normal">Voortstuwingssystemen</styled-content>
+        </title>
+        <p>Het is in doorstroomanalysesystemen van belang dat de debieten van elke stroom zo goed mogelijk constant blijven en dat de verhouding van de debieten voor de verschillende stromen niet verandert.</p>
+        <p>Toegepast worden:</p>
+        <list id="sec_4.1_list_1" list-type="order">
+          <list-item>
+            <label>1.</label>
+            <p>peristaltische (slangen)pompen;</p>
+          </list-item>
+          <list-item>
+            <label>2.</label>
+            <p>zuigerpompen, zoals gebruikt in hogedrukvloeistofchromatografie (HPLC);</p>
+          </list-item>
+          <list-item>
+            <label>3.</label>
+            <p>gasdrukvoortstuwing;</p>
+          </list-item>
+          <list-item>
+            <label>4.</label>
+            <p>hydrostatische voortstuwing ("gravity flow").</p>
+          </list-item>
+        </list>
+        <sec id="sec_4.1.1">
+          <label>4.1.1</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Peristaltische (slangen)pompen</italic>
+            </styled-content>
+          </title>
+          <p>
+            Slangenpompen worden zowel in CFA- als in FIA-systemen veruit het veelvuldigst toegepast. Ze zijn bedrijfszeker en de pompsnelheid is goed regelbaar. Dit type pompen is verkrijgbaar in modellen met 1 tot meer dan 30 slangposities, waardoor een aantal analyses simultaan kunnen worden uitgevoerd. De pompen zijn verkrijgbaar in programmeerbare uitvoeringen of met op afstand bedienbare aan/uitschakeling en snelheidsregeling.
+            <break />
+            Het aantal rollers van de pomp en de rotatiefrequentie bepalen de frequentie van de pulsatie in het systeem; meer rollers en hogere snelheid verminderen de pulsatie en geven dus een rustiger detectorsignaal. Dit is doorgaans voor FIA-systemen van meer belang dan voor CFA-systemen waar de gasbellen de drukpulsaties vrijwel volledig opheffen.
+            <break />
+            Voor FIA-systemen is het daarom aan te bevelen de rotatiefrequentie van de pompkop hoog te kiezen en zo nodig de pompslangmiddellijn overeenkomstig te verkleinen. Pompkoppen met veel rollers verdienen in dit geval de voorkeur.
+            <break />
+            Mechanische hulpmiddelen die bij FIA-systemen soms worden toegepast om pulsaties op te vangen, dienen voor wat de dragerstroom betreft in ieder geval vóór het injectiepunt te worden geplaatst en bij reagensstromen vóór het punt van invoer in de transportleiding. Bij CFA-systemen worden pulsonderdrukkers steeds aan de perszijde van de slangenpomp geplaatst. Meestal is dit soort voorzieningen echter overbodig.
+          </p>
+          <p>
+            Pompslangen zijn vervaardigd van zacht, samendrukbaar materiaal (zie verder
+            <xref ref-type="sec" rid="sec_4.3.4">4.3.4</xref>
+            ).
+            <break />
+            Let er op dat indien, zonder verdere maatregelen te nemen, de druk op de slang wordt weggenomen, bij het openen van de pomp, vloeistoffen van het ene reservoir in het andere kunnen overhevelen.
+          </p>
+        </sec>
+        <sec id="sec_4.1.2">
+          <label>4.1.2</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Zuigerpompen</italic>
+            </styled-content>
+          </title>
+          <p>Indien een systeem componenten bevat die een hoge drukval veroorzaken, bijv. een ionenwisselaar, kan het noodzakelijk zijn gebruik te maken van vloeistofpompen zoals die worden toegepast in HPLC. De kosten van dergelijke pompen zijn echter hoog.</p>
+        </sec>
+        <sec id="sec_4.1.3">
+          <label>4.1.3</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Gasdrukvoorstuwing</italic>
+            </styled-content>
+          </title>
+          <p>
+            In eenvoudige FIA-systemen is gasdrukvoortstuwing een goed alternatief voor slangenpompen. Met lucht of stikstof met een overdruk van 50 tot 100 kPa wordt de vloeistof in het analysesysteem gevoerd via een restrictie bestaande uit een PTFE-slang met een binnenmiddellijn van 0,2 mm.
+            <break />
+            Voor een goede werking is het van groot belang dat in het systeem verder geen of slechts zeer geringe weerstanden optreden. Indien er wel een beduidende weerstand in het systeem is, zullen de ingestelde debieten zich na aansluiten wijzigen waardoor de gewenste verhoudingen worden verstoord.
+            <break />
+            Uit veiligheidsoverwegingen is het aan te bevelen gebruik te maken van stevige kunststofvoorraadflessen. Bij gebruik van glazen flessen dient een veiligheidsomhulling te worden aangebracht. Het druksysteem moet zo worden beveiligd dat verhoging van de werkdruk is uitgesloten.
+            <break />
+            Een groot voordeel van gasdrukvoortstuwing is, dat deze pulsatievrij is en daardoor zeer geschikt voor toepassing in combinatie met bijv. potentiometrische of amperometrische detectoren.
+            <break />
+            Het feit dat geen gekalibreerde pompslangen worden gebruikt maakt dit voorstuwingssysteem extra aantrekkelijk. Het is zeker het goedkoopste systeem.
+          </p>
+        </sec>
+        <sec id="sec_4.1.4">
+          <label>4.1.4</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Hydrostatische voortstuwing</italic>
+            </styled-content>
+          </title>
+          <p>Dit is een zeer zelden toegepast voortstuwingsmiddel. Het heeft dezelfde voordelen als gasdruksystemen en kan alleen worden toegepast in zeer eenvoudige, vrijwel weerstandsloze opstellingen.</p>
+        </sec>
+      </sec>
+      <sec id="sec_4.2">
+        <label>4.2</label>
+        <title>
+          <styled-content style-type="normal">Monsteraanvoer</styled-content>
+        </title>
+        <sec id="sec_4.2.1">
+          <label>4.2.1</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Algemeen</italic>
+            </styled-content>
+          </title>
+          <p>Zowel ten behoeve van CFA als ten behoeve van FIA moeten de monstervloeistoffen in het analysesysteem worden gebracht. Door middel van een tijdschakeling kan dat op het juiste moment en gedurende een vooraf ingestelde tijd plaatsvinden. Het gewenste debiet wordt met behulp van de toegepaste pomp en de gebruikte pompslang bereikt. Monsters en kalibratieoplossingen dienen op volkomen identieke wijze in het systeem te worden gebracht.</p>
+        </sec>
+        <sec id="sec_4.2.2">
+          <label>4.2.2</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Monsteraanvoer bij CFA</italic>
+            </styled-content>
+          </title>
+          <p>Bij CFA wordt het opgezogen monster direct in het analysesysteem gebracht. Alvorens het volgende monster te doseren, wordt eerst een hoeveelheid wasvloeistof opgenomen.</p>
+          <p>
+            Afgezien van gasbelsegmentering komen bij CFA nog extra gasbellen voor als gevolg van deze spoelgang. Deze gasbellen gaan de "carry-over" in de monsteraanvoerslang tegen en zijn derhalve noodzakelijk bij transport van het monster over grote afstanden. Bij een groot debiet voor de monsteraanvoer kunnen deze extra gasbellen problemen veroorzaken in de meetcuvet van de detector. Aangezien direct na de pomp gasbelsegmentering plaatsvindt, is deze extra gasbel op dat moment overbodig en kan derhalve via een ontgassingssysteem worden verwijderd.
+            <break />
+            Monsters en kalibratieoplossingen moeten representatief, gedurende hetzelfde tijdsverloop met hetzelfde debiet en op het juiste moment worden aangezogen.
+          </p>
+        </sec>
+        <sec id="sec_4.2.3">
+          <label>4.2.3</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Monsteraanvoer bij FIA</italic>
+            </styled-content>
+          </title>
+          <p>
+            Bij FIA wordt met het opgezogen monster de monsterlus van de injectiekraan gespoeld en gevuld. Er is daarom geen extra wasvloeistof nodig.
+            <break />
+            De luchtbellen tussen twee opeenvolgende aangezogen monsters, zoals die bij FIA voorkomen, storen de bepaling niet, omdat ze bij doorspoelen van de monsterlus verdwijnen.
+            <break />
+            Het monster wordt in een monsterlus opgeslagen en daarna in het analysesysteem opgenomen. Hierbij is het van groot belang dat de monsterlus volledig is gevuld met het te analyseren monster.
+          </p>
+        </sec>
+      </sec>
+      <sec id="sec_4.3">
+        <label>4.3</label>
+        <title>
+          <styled-content style-type="normal">Leidingen</styled-content>
+        </title>
+        <sec id="sec_4.3.1">
+          <label>4.3.1</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Algemeen</italic>
+            </styled-content>
+          </title>
+          <p>
+            In doorstroomanalysesystemen bestaan de transportleidingen doorgaans uit kunststofslangen, hoewel bij CFA ook veelvuldig gebruik wordt gemaakt van glazen buizen, in het bijzonder voor die delen waarin een chemische reactie moet verlopen.
+            <break />
+            Bij het gebruik van kunststofslangen dient men erop bedacht te zijn dat veel van dergelijke materialen gas- en dus ook zuurstofdoorlatend zijn.
+            <break />
+            Uit het oogpunt van ruimtebeperking worden leidingen zoveel mogelijk gespiraliseerd, bijv. in verwarmingsbaden. Spiralen worden ook toegepast om menging van vloeistoffen te bevorderen. Voor gesegmenteerde vloeistofstromen heeft deze spiralisering geen merkbare invloed op de dispersie; voor ongesegmenteerde stromen leidt spiralisering tot vermindering van de piekverbreding. Dit wordt veroorzaakt doordat ten gevolge van middelpuntvliedende krachten een zogenoemde "secundaire stroming" ontstaat in een vlak loodrecht op de voortbewegingsrichting. De verhoogde dwarsmenging vergroot de uniformiteit van de snelheid waarmee stoffen zich door de leiding verplaatsen. In het algemeen zal zowel het tijdstip waarop de responsiecurve zijn maximale waarde bereikt als de breedte van de piekvormige responsiecurve afhangen van de ruimtelijke vorm van de leidingen. Om reproduceerbare resultaten te verkrijgen dient deze vorm zo goed mogelijk gefixeerd te worden.
+            <break />
+            Bij FIA moet het ontstaan van dode volumes in verbindingsstukken worden vermeden, aangezien deze piekverbreding veroorzaken. Het verdient aanbeveling om zoveel mogelijk gebruik te maken van zogenoemde "zero dead volume"-koppelingen.
+          </p>
+          <p>De leidingen zijn te onderscheiden in transportleidingen, reactieleidingen en pompslangen.</p>
+        </sec>
+        <sec id="sec_4.3.2">
+          <label>4.3.2</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Transportleidingen</italic>
+            </styled-content>
+          </title>
+          <p>
+            De transportleidingen dienen om de verschillende modules met elkaar te verbinden, zodat vloeistof naar die plaatsen kan worden vervoerd. Hiervoor wordt slang van zacht materiaal (bijv. PVC) of hard materiaal (bijv. PE of PTFE) en glazen buis gebruikt.
+            <break />
+            Bij CFA is de binnenmiddellijn van de gebruikte slang afhankelijk van het debiet van de te transporteren stroom. Bij toepassing na de pomp en voor transport over grote afstanden (meer dan ca. 5 cm) verdient glazen buis de voorkeur.
+          </p>
+          <non-normative-note>
+            <label>
+              <italic>Toelichting</italic>
+            </label>
+            <p>Bij glazen buizen vormt zich gemakkelijk een vloeistoffilm op de glaswand; indien afwezig ondervindt de te verpompen vloeistof een grotere weerstand met als gevolg pulsaties. Bij het gebruik van kunststofslangen wordt de vloeistoffilm slecht gevormd wat het noodzakelijk maakt oppervlakspanningverlagende stoffen te gebruiken.</p>
+          </non-normative-note>
+          <p>Bij FIA, waar meestal harde PTFE-slang wordt gebruikt, is de binnenmiddellijn doorgaans ca. 0,5 mm.</p>
+          <p>Bij CFA en bij FIA bepaalt de keuze van de toegepaste slang, wat betreft materiaal en middellijn, mede de betrouwbaarheid van de analyseresultaten. Het is derhalve noodzakelijk dat dit bij de beschrijving van toegepaste systemen steeds wordt aangegeven. Bij de opbouw van het systeem dienen aanwijzingen dienaangaande in normen nauwgezet in acht te worden genomen.</p>
+        </sec>
+        <sec id="sec_4.3.3">
+          <label>4.3.3</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Reactieleidingen</italic>
+            </styled-content>
+          </title>
+          <p>
+            Reactieleidingen worden toegepast om verschillende vloeistoffen met elkaar in contact te brengen, of een bepaalde verblijftijd te realiseren. Dit kan bij kamertemperatuur of een daarvan afwijkende temperatuur, bijv. in verwarmingsbaden.
+            <break />
+            De spiralen hebben ook een transportfunctie.
+            <break />
+            Bij CFA vinden reacties meestal plaats in glazen mengspiralen (zie toelichting onder
+            <xref ref-type="sec" rid="sec_4.3.2">4.3.2</xref>
+            ), bij FIA vaak in slangen van PTFE.
+            <break />
+            Glazen buizen zijn niet aan slijtage onderhevig en hebben een vrijwel onbeperkte levensduur. Bij slangen daarentegen is de levensduur sterk afhankelijk van de aard van de doorgevoerde vloeistof. Een levensduur van een jaar is echter geen uitzondering.
+          </p>
+        </sec>
+        <sec id="sec_4.3.4">
+          <label>4.3.4</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Pompslangen</italic>
+            </styled-content>
+          </title>
+          <p>
+            Pompslangen zijn in het algemeen van PVC of siliconenrubber vervaardigd. Voor het verpompen van oplosmiddelen, zuren en basen zijn pompslangen te koop van materiaal dat inert is voor deze vloeistoffen. De pompslangen leveren, afhankelijk van hun binnenmiddellijn en het type pomp, debieten die over het algemeen tussen 0,1 en 3 ml/min liggen. Bij gebruik van zeer dunne slangen kunnen echter gemakkelijk verstoppingen optreden. Belangrijk is er zorg voor te dragen dat alle gebruikte pompslangen een zelfde wanddikte hebben.
+            <break />
+            Pompslangen hebben een beperkte levensduur. Aantasting vindt aan de buitenzijde plaats door de rollen, walsen of "vingers" van de pomp. Aan de binnenzijde kan aantasting plaatsvinden ten gevolge van de verpompte reagentia.
+            <break />
+            De binnenkant van de slangen kan door keuze van het juiste slangmateriaal zolang mogelijk onaangetast worden gehouden. Na verloop van tijd zal de slang, als de pomp wordt geopend, minder of meer zijn platgedrukt. Aanvankelijk herstelt zich dit, doch later minder of geheel niet. Als levensduur voor PVC- en siliconenrubberslangen kan bij verpompen van de daarvoor toegelaten vloeistoffen ca. een maand worden gerekend als de pomp continu werkt.
+            <break />
+            Bij onderbroken werking zal de levensduur naar verhouding langer kunnen zijn in verband met herstelmogelijkheid voor de slangen.
+            <break />
+            Bij vervanging na 100 à 200 werkingsuren is er weinig kans op storing als gevolg van versleten pompslangen.
+          </p>
+          <p>
+            Het is bekend dat het debiet van een slang in een bepaalde pomp met de tijd aanvankelijk enigszins (ca. 1 %) toeneemt en daarna met 10 % of meer afneemt. In de meeste gevallen heeft dit geen invloed op de analyseresultaten aangezien de procentuele debietsverandering voor alle pompslangen geldt en kalibratieoplossingen en monsters frequent en op dezelfde wijze worden geanalyseerd.
+            <break />
+            Wordt echter een van de volgende verschijnselen geconstateerd:
+          </p>
+          <list id="sec_4.3.4_list_2" list-type="bullet">
+            <list-item>
+              <label>—</label>
+              <p>verandering van de gevoeligheid van de bepaling;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>het binnen een meetserie vaker moeten corrigeren vanwege verloop in het signaal van een kalibratieoplossing;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>vervorming van het signaal op de automatische schrijver door ruis;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>het niet aanzuigen van een reagens (niet veroorzaakt door een verstopping);</p>
+            </list-item>
+          </list>
+          <p>dan zijn de pompslangen aan vervanging toe. Het beste is steeds alle pompslangen tegelijkertijd te vervangen.</p>
+        </sec>
+      </sec>
+      <sec id="sec_4.4">
+        <label>4.4</label>
+        <title>
+          <styled-content style-type="normal">Modules voor doorstroomanalysesystemen</styled-content>
+        </title>
+        <p>Voor de analyse met een doorstroomsysteem wordt gebruik gemaakt van verschillend opgebouwde modules, afhankelijk van de toegepaste chemische of fysische methode. Er wordt onderscheid gemaakt tussen meng- en reactiemodules, membraanscheidingsmodules, ionenwisselingskolommen, reductiekolommen en destructiemodules.</p>
+        <sec id="sec_4.4.1">
+          <label>4.4.1</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Meng- en reactiemodule</italic>
+            </styled-content>
+          </title>
+          <p>
+            De meng- en reactiemodule dient voor menging van het monster en de reagentia en bestaat uit een serie buizen, injectiefittingen en eventueel een verwarmingsbad.
+            <break />
+            De buizen zijn vervaardigd van glas en/of kunststof, al of niet gespiraliseerd ten einde menging en/of een bepaalde verblijftijd te realiseren. De lengte van de spiralen bepaalt de tijd die beschikbaar is voor de chemische reactie na toevoeging van de reagentia.
+            <break />
+            Het verwarmingsbad moet op een zodanige temperatuur worden gebracht dat de vloeistof de gewenste temperatuur bereikt gedurende de gewenste verblijftijd. Na voldoende reactietijd wordt de oplossing naar de detector gevoerd.
+          </p>
+        </sec>
+        <sec id="sec_4.4.2">
+          <label>4.4.2</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Membraanscheidingsmodule</italic>
+            </styled-content>
+          </title>
+          <p>
+            Een membraanscheidingsmodule kan worden gebruikt voor bijv. dialyse, filtratie of gasdiffusie. Op de module is daartoe een dialyseblok geplaatst dat bestaat uit twee dialyseplaten van kunststof, elk met een groef en gescheiden door een membraan.
+            <break />
+            De platen zijn zo tegen elkaar geplaatst dat een buis ontstaat die in de lengterichting door het membraan in tweeën is gedeeld. De donorvloeistof met de te bepalen component treedt aan de ene zijde binnen en de ontvangervloeistof aan de andere zijde. Bij CFA stromen donor- en ontvangervloeistof meestal in dezelfde richting. Het rendement is minder dan wanneer de stromen tegengesteld gericht zijn, maar de tijd om een stationaire toestand te verkrijgen is korter en de kans op wederzijdse contaminatie van de aan elkaar grenzende monsters is veel kleiner.
+          </p>
+        </sec>
+        <sec id="sec_4.4.3">
+          <label>4.4.3</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>lonenwisselingskolom</italic>
+            </styled-content>
+          </title>
+          <p>
+            Voor sommige chemische bepalingen is het nodig storende ionen te verwijderen. Hiervoor kan in het doorstroomsysteem een buis worden geplaatst die een zelfde binnenmiddellijn heeft als de buizen van een reactiemodule (
+            <xref ref-type="sec" rid="sec_4.4.1">4.4.1</xref>
+            ) en is gevuld met een anionen- of kationenwisselaar. Het is wel noodzakelijk vóór de intrede van de stroom de gasbel te verwijderen.
+            <break />
+            Als voorbeeld kan worden genoemd de bepaling van sulfaat in zeewater, waarbij de calcium- en magnesiumionen storen. Met behulp van een ionenwisselaar worden deze eerst verwijderd. Bij CFA vinden de reagenstoevoegingen na herbemonstering ("resampling") plaats.
+          </p>
+        </sec>
+        <sec id="sec_4.4.4">
+          <label>4.4.4</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Reductiekolommen</italic>
+            </styled-content>
+          </title>
+          <p>
+            Voor sommige ionen verloopt alleen in gereduceerde vorm de gewenste chemische reactie. In het doorstroomsysteem kan dan een buis worden geplaatst die een zelfde binnenmiddellijn heeft als de buizen van een reactiemodule (
+            <xref ref-type="sec" rid="sec_4.4.1">4.4.1</xref>
+            ) en is gevuld met een reductor. Voor intrede van de vloeistofstroom moeten eerst gasbellen worden verwijderd. Na de reductie vindt bij CFA herbemonstering plaats.
+            <break />
+            Als voorbeeld kan worden genoemd de bepaling van nitraat, waarbij het nitraat tot nitriet moet worden gereduceerd om de gewenste chemische reactie te laten verlopen; hierbij wordt cadmium als reductor gebruikt. De hierbij optredende waterstofontwikkeling kan hinderlijk zijn.
+          </p>
+        </sec>
+        <sec id="sec_4.4.5">
+          <label>4.4.5</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Destructiemodule</italic>
+            </styled-content>
+          </title>
+          <p>Er zijn verschillende soorten destructietechnieken in gebruik. Bij CFA wordt de laatste jaren vaak destructie met behulp van UV-straling toegepast. In de module is een UV-lamp geplaatst, waaromheen een kwartsspiraal loopt, waar het monster door stroomt. Deze techniek wordt onder meer toegepast op organisch koolstof, stikstof en fosfor, waarbij de respectievelijke componenten worden omgezet in koolstofdioxide, nitraat of fosfaat. Na deze destructie kan de vloeistofstroom verder gaan via een meng- en reactiemodule. Er dient te worden bedacht dat de destructie niet altijd volledig is.</p>
+        </sec>
+        <sec id="sec_4.4.6">
+          <label>4.4.6</label>
+          <title>
+            <styled-content style-type="normal">
+              <italic>Destillatiemodule</italic>
+            </styled-content>
+          </title>
+          <p>Voor sommige bepalingen is het nodig om de te bepalen component af te scheiden uit de monstermatrix en over te brengen in een vloeistofstroom, waarin de uiteindelijke analyse plaatsvindt. Hiervoor kan in het doorstroomsysteem een destillatiemodule worden geplaatst. Deze destillatie wordt onder meer toegepast bij de analyse van cyanide en vluchtige fenolen. Na de destillatie gaat het destillaat verder met de vloeistofstroom via meng- en reactiemodules. Het residu van de destillatie wordt in continue stroom afgevoerd. Het is aan te bevelen om bij het opstarten van een nieuwe analysemethode het rendement van de destillatiemodule te controleren met behulp van standaardoplossingen.</p>
+        </sec>
+      </sec>
+      <sec id="sec_4.5">
+        <label>4.5</label>
+        <title>
+          <styled-content style-type="normal">Detectiesystemen</styled-content>
+        </title>
+        <p>
+          In de literatuur wordt een grote verscheidenheid aan detectoren voor doorstroommethoden beschreven. Belangrijk is dat het detectorvolume aan het, meestal kleine, monsterdebiet en bij FIA aan kleine monstervolumes is aangepast. Dit betekent in het algemeen dat het detectorvolume kleiner moet zijn dan 100 — 200 μl en bij FIA kleiner dan 20 μl. Een klein detectorvolume resulteert in scherpe pieken en een hoge analysesnelheid omdat in de cel nauwelijks dispersie optreedt.
+          <break />
+          Zonder twijfel is UV/VIS fotometrie de meest frequent toegepaste detectiemethode. Voor de meeste gangbare instrumenten moeten gasbellen vooraf worden verwijderd; voor CFA zijn echter recentelijk instrumenten ontwikkeld waarmee elektronisch de invloed van gasbellen wordt weggefilterd.
+          <break />
+          Verder vinden vrijwel alle bekende detectietechnieken toepassing in doorstroomsystemen zoals: nefelometrie, fluorimetrie, chemiluminescentie, refractometrie en de belangrijke elektrochemische methoden als: conductometrie, potentiometrie, ampèrometrie, polarografie (heroplossingsvoltammetrie); ook technieken als atomaire-absorptiespectrometrie en spectrometrie met inductief gekoppeld plasma (ICP) zijn uitstekend met doorstroommethoden te integreren.
+          <break />
+          In het algemeen geldt dat alle voor HPLC op de markt gebrachte detectoren zonder problemen in FIA kunnen worden toegepast.
+        </p>
+      </sec>
+      <sec id="sec_4.6">
+        <label>4.6</label>
+        <title>
+          <styled-content style-type="normal">Gegevensverwerkende apparatuur</styled-content>
+        </title>
+        <p>Bij het verwerken van het detectorsignaal wordt meer en meer gebruik gemaakt van microcomputers. De toepassing van microcomputers biedt diverse voordelen:</p>
+        <list id="sec_4.6_list_3" list-type="bullet">
+          <list-item>
+            <label>—</label>
+            <p>automatische berekening van de kalibratielijn door middel van regressie-analyse, alsmede omrekening van het detectorsignaal naar het gezochte gehalte;</p>
+          </list-item>
+          <list-item>
+            <label>—</label>
+            <p>piekdetectie voordat het "steady state" niveau is bereikt, waardoor kortere analysetijden mogelijk zijn;</p>
+          </list-item>
+          <list-item>
+            <label>—</label>
+            <p>automatische correctie voor "carry-over";</p>
+          </list-item>
+          <list-item>
+            <label>—</label>
+            <p>automatische correctie voor drift;</p>
+          </list-item>
+          <list-item>
+            <label>—</label>
+            <p>elektronische filtering van het signaal dat wordt veroorzaakt door de gang van een gasbel door een spectrofotometrische detector (bij CFA).</p>
+          </list-item>
+        </list>
+      </sec>
+    </sec>
+    <sec id="sec_5">
+      <label>5</label>
+      <title>Instelling van de doorstroomanalysesystemen</title>
+      <p>Voor het met succes toepassen van doorstroomanalyse is het optimaal instellen van de apparatuur noodzakelijk. Dit geldt zowel voor CFA als voor FIA, die elk hun eigen instellingsprocedure eisen.</p>
+      <non-normative-note>
+        <label>
+          <italic>Opmerking</italic>
+        </label>
+        <p>Zie de bijlage voor het optimaliseren van een nieuw opgebouwd doorstroomanalysesysteem.</p>
+      </non-normative-note>
+      <sec id="sec_5.1">
+        <label>5.1</label>
+        <title>
+          <styled-content style-type="normal">Instelling van de apparatuur voor CFA</styled-content>
+        </title>
+        <list id="sec_5.1_list_4" list-type="alpha-lower">
+          <list-item>
+            <label>a.</label>
+            <p>stel de monsterwisselaar in op de monstertijd en de spoeltijd; raadpleeg hiervoor de handleiding van de apparatuur of de desbetreffende norm;</p>
+            <non-normative-note>
+              <label>
+                <italic>Toelichting</italic>
+              </label>
+              <p>Spoeltijd en monstersnelheid zijn sterk afhankelijk van het gebruikte gegevensverwerkend systeem (wel of geen piekdetectie op "steady state" niveau). In de desbetreffende norm kan dan ook geen optimale spoeltijd en monstersnelheid aangegeven worden. Eventueel in normen vermelde gegevens zijn dan ook richtlijnen, waarbij van de meest eenvoudige configuratie is uitgegaan (geen automatische gegevensverwerking).</p>
+            </non-normative-note>
+          </list-item>
+          <list-item>
+            <label>b.</label>
+            <p>gebruik pompslangen van de juiste binnenmiddellijn en vervaardigd van materiaal dat niet wordt aangetast door de verschillende te verpompen vloeistoffen;</p>
+          </list-item>
+          <list-item>
+            <label>c.</label>
+            <p>bereid de te verpompen vloeistoffen volgens de norm, zorg daarbij dat geen onopgeloste delen over blijven of dat vaste delen in de vloeistoffen worden geïntroduceerd. De vloeistoffen dienen zo nodig te worden ontgast en/of gefiltreerd.</p>
+          </list-item>
+          <list-item>
+            <label>d.</label>
+            <p>zorg ervoor dat de aanzuigslangen zonder restrictie in de voorraadflessen onder het vloeistofniveau eindigen en dat de vloeistoffen op de juiste wijze worden aangezogen;</p>
+          </list-item>
+          <list-item>
+            <label>e.</label>
+            <p>bouw het gedeelte waar de reactie moet plaatsvinden op volgens de betrokken norm. Let daarbij op de binnenmiddellijn van slangen en buizen en de toe te passen materialen;</p>
+          </list-item>
+          <list-item>
+            <label>f.</label>
+            <p>stel verwarmingsbaden in op de vereiste temperatuur;</p>
+          </list-item>
+          <list-item>
+            <label>g.</label>
+            <p>stel de detectie-eenheid in. Let, indien van toepassing, op de juiste golflengte-instelling en de optische weglengte van de spectrofotometer;</p>
+          </list-item>
+          <list-item>
+            <label>h.</label>
+            <p>stel de automatische schrijver in op de gewenste papiersnelheid;</p>
+          </list-item>
+          <list-item>
+            <label>i.</label>
+            <p>stel, voordat met de analyse van de monsters wordt begonnen, de basislijn op de automatische schrijver in volgens aanwijzingen van de fabrikant van de apparatuur;</p>
+          </list-item>
+          <list-item>
+            <label>j.</label>
+            <p>stel de gevoeligheid van de automatische schrijver zo in dat de piek als resultaat van de analyse van de kalibratieoplossing met de hoogste toe te passen concentratie, een uitslag van ca. 90 % van de volle schaal oplevert.</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec id="sec_5.2">
+        <label>5.2</label>
+        <title>
+          <styled-content style-type="normal">Instelling van de apparatuur voor FIA</styled-content>
+        </title>
+        <list id="sec_5.2_list_5" list-type="alpha-lower">
+          <list-item>
+            <label>a.</label>
+            <p>stel de monsterinjectiekraan, afhankelijk van het type, in, zoals dat in de betrokken norm wordt aangegeven, volgens de gebruiksaanwijzing van de fabrikant van de kraan;</p>
+          </list-item>
+          <list-item>
+            <label>b.</label>
+            <p>maak de leidingen van het voorgeschreven materiaal, met de juiste binnenmiddellijn en van de in de betrokken norm voorgeschreven lengte;</p>
+          </list-item>
+          <list-item>
+            <label>c.</label>
+            <p>
+              voer de overige instellingen uit volgens
+              <xref ref-type="sec" rid="sec_5.1">5.1</xref>
+            </p>
+          </list-item>
+        </list>
+      </sec>
+    </sec>
+    <sec id="sec_6">
+      <label>6</label>
+      <title>Kalibratie en gegevensverwerking</title>
+      <sec id="sec_6.1">
+        <label>6.1</label>
+        <title>
+          <styled-content style-type="normal">Lineariteit</styled-content>
+        </title>
+        <p>De lineariteit van de bepaling dient te worden vastgesteld aan de hand van een concentratiereeks van kalibratieoplossingen. Indien de bepaling lineair is gebleken kan met een eenpuntskalibratie worden volstaan, waarbij periodieke controle van de lineariteit gewenst is. Bij meer geautomatiseerde systemen kan bij elke monsterserie een meerpuntskalibratie worden toegepast.</p>
+        <non-normative-note>
+          <label>
+            <italic>Opmerking</italic>
+          </label>
+          <p>Zie de bijlage voor de toepassing van achtergrondconcentraties.</p>
+        </non-normative-note>
+      </sec>
+      <sec id="sec_6.2">
+        <label>6.2</label>
+        <title>
+          <styled-content style-type="normal">Drift</styled-content>
+        </title>
+        <p>Bij de analyse van een serie monsters dient telkens na 10 à 15 monsters één of, beter, enkele blanco('s) ter voorkoming van "carry-over", en een kalibratieoplossing op de monsterwisselaar te worden geplaatst. De frequentie hiervan dient te worden bepaald door de drift die optreedt. Als richtlijn kan worden aangehouden, dat de drift ten hoogste 1 % van het volledige meetgebied mag zijn. Bij systemen waarbij achteraf automatisch gecorrigeerd kan worden voor lineaire drift, is in principe het analyseren van één kalibratie- en blanco-oplossing aan het begin en het eind van de meetserie voldoende. Hier mag dus slechts sprake zijn van lineaire drift. De mate van drift verschilt per componentspecifieke analyse.</p>
+      </sec>
+      <sec id="sec_6.3">
+        <label>6.3</label>
+        <title>
+          <styled-content style-type="normal">Algemene kalibratieprocedure</styled-content>
+        </title>
+        <list id="sec_6.3_list_6" list-type="alpha-lower">
+          <list-item>
+            <label>a.</label>
+            <p>stel de signaalhoogte van de stabiele basislijn (blanco) op de automatische schrijver in op 10 schaaldelen;</p>
+          </list-item>
+          <list-item>
+            <label>b.</label>
+            <p>stel een serie kalibratieoplossingen samen, die aanvangt met tweemaal de kalibratieoplossing met het maximale gehalte van het gekozen meetgebied, ten einde de volle schaaluitslag op 90 schaaldelen te kunnen stellen. Vervolg de serie met tweemaal een blanco-oplossing voor de controle van de basislijn; Analyseer daarna de volledige kalibratiegrafiek.</p>
+          </list-item>
+          <list-item>
+            <label>c.</label>
+            <p>plaats een serie te analyseren monsters in de monsterwisselaar die om de 10 à 15 monsters een kalibratieoplossing met het maximale gehalte van het gekozen meetgebied en een blanco-oplossing bevat, ten einde in staat te zijn voor eventueel verloop van het systeem te corrigeren;</p>
+          </list-item>
+          <list-item>
+            <label>d.</label>
+            <p>verdun zo nodig het monster zo, dat het gehalte binnen het gewenste meetgebied ligt, doch niet lager dan 20 % van het maximum van dit gebied.</p>
+          </list-item>
+        </list>
+      </sec>
+      <sec id="sec_6.4">
+        <label>6.4</label>
+        <title>
+          <styled-content style-type="normal">"Carry-over"</styled-content>
+        </title>
+        <p>
+          Bij doorstroomanalysesystemen is de fout die wordt veroorzaakt door "carry-over" afhankelijk van het gebruikte systeem.
+          <break />
+          Het effect van "carry-over" op de analyseresultaten dient daarom voor ieder systeem afzonderlijk te worden vastgesteld.
+          <break />
+          Dit effect kan worden bepaald door een meetserie samen te stellen met achtereenvolgens twee kalibratieoplossingen (a
+          <sub>1</sub>
+          en a
+          <sub>2</sub>
+          ) met een hoge concentratie van de te bepalen component en drie kalibratieoplossingen (b
+          <sub>1</sub>
+          , b
+          <sub>2</sub>
+          en b
+          <sub>3</sub>
+          ) met een lage concentratie. Kies voor a
+          <sub>1</sub>
+          en a
+          <sub>2</sub>
+          de meest geconcentreerde oplossing uit de kalibratiereeks en voor b
+          <sub>1</sub>
+          , b
+          <sub>2</sub>
+          en b
+          <sub>3</sub>
+          de meest verdunde oplossing uit die reeks. Analyseer deze meetserie, bepaal de piekhoogten en bereken het "carry-over" effect
+          <italic>q</italic>
+          met behulp van de formule:
+        </p>
+        <disp-formula id="sec_6.4_formula_1">
+          <label>(1)</label>
+          <mml:math id="mml_m2" overflow="scroll">
+            <mml:mrow>
+              <mml:mi>q</mml:mi>
+              <mml:mspace width=".2em" />
+              <mml:mo>=</mml:mo>
+              <mml:mspace width=".2em" />
+              <mml:mrow>
+                <mml:mfrac>
+                  <mml:mrow>
+                    <mml:msub>
+                      <mml:mi>h</mml:mi>
+                      <mml:mrow>
+                        <mml:mi fontstyle="normal">b</mml:mi>
+                        <mml:mn>1</mml:mn>
+                      </mml:mrow>
+                    </mml:msub>
+                    <mml:mo>−</mml:mo>
+                    <mml:msub>
+                      <mml:mi>h</mml:mi>
+                      <mml:mrow>
+                        <mml:mi fontstyle="normal">b</mml:mi>
+                        <mml:mn>3</mml:mn>
+                      </mml:mrow>
+                    </mml:msub>
+                  </mml:mrow>
+                  <mml:mrow>
+                    <mml:msub>
+                      <mml:mi>h</mml:mi>
+                      <mml:mrow>
+                        <mml:mi fontstyle="normal">a</mml:mi>
+                        <mml:mn>2</mml:mn>
+                      </mml:mrow>
+                    </mml:msub>
+                    <mml:mo>−</mml:mo>
+                    <mml:msub>
+                      <mml:mi>h</mml:mi>
+                      <mml:mrow>
+                        <mml:mi fontstyle="normal">b</mml:mi>
+                        <mml:mn>3</mml:mn>
+                      </mml:mrow>
+                    </mml:msub>
+                  </mml:mrow>
+                </mml:mfrac>
+                <mml:mspace width=".2em" />
+                <mml:mo>×</mml:mo>
+                <mml:mspace width=".2em" />
+                <mml:mrow>
+                  <mml:mn>100</mml:mn>
+                  <mml:mspace width=".2em" />
+                  <mml:mo>%</mml:mo>
+                </mml:mrow>
+              </mml:mrow>
+            </mml:mrow>
+          </mml:math>
+          <inline-graphic xlink:type="simple" xlink:href="mml_m2" />
+        </disp-formula>
+        <table-wrap content-type="formula-index" position="float" orientation="portrait">
+          <caption>
+            <title>waarin:</title>
+          </caption>
+          <table width="650">
+            <colgroup span="1">
+              <col width="10%" align="left" valign="top" span="1" />
+              <col width="90%" align="left" valign="top" span="1" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td rowspan="1" colspan="1">
+                  <italic>q</italic>
+                </td>
+                <td rowspan="1" colspan="1">is het "carry-over" effect, in %;</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">
+                  <italic>h</italic>
+                  <sub>b1</sub>
+                </td>
+                <td rowspan="1" colspan="1">
+                  is de piekhoogte behorend bij oplossing b
+                  <sub>1</sub>
+                  ;
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">
+                  <italic>h</italic>
+                  <sub>b3</sub>
+                </td>
+                <td rowspan="1" colspan="1">
+                  is de piekhoogte behorend bij oplossing b
+                  <sub>3</sub>
+                  ;
+                </td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">
+                  <italic>h</italic>
+                  <sub>a2</sub>
+                </td>
+                <td rowspan="1" colspan="1">
+                  is de piekhoogte behorend bij oplossing a
+                  <sub>2</sub>
+                  .
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <non-normative-note>
+          <label>
+            <italic>Opmerking</italic>
+          </label>
+          <p>
+            De gevonden waarde voor
+            <italic>q</italic>
+            is slechts een indicatie voor het "carry-over" effect. In de praktijk is de systematische fout veroorzaakt door "carry-over" effecten sterk afhankelijk van de grootte van de grootste te meten concentratie en tevens van de viscositeit van het monster.
+          </p>
+        </non-normative-note>
+        <p>Piekhoogten van monsters kunnen met behulp van de volgende formule voor "carry-over" worden gecorrigeerd:</p>
+        <disp-formula id="sec_6.4_formula_2">
+          <label>(1)</label>
+          <mml:math id="mml_m3" overflow="scroll">
+            <mml:mrow>
+              <mml:msub>
+                <mml:msup>
+                  <mml:mi>h</mml:mi>
+                  <mml:mo>′</mml:mo>
+                </mml:msup>
+                <mml:mn>2</mml:mn>
+              </mml:msub>
+              <mml:mspace width=".2em" />
+              <mml:mo>=</mml:mo>
+              <mml:mspace width=".2em" />
+              <mml:mrow>
+                <mml:msub>
+                  <mml:mi>h</mml:mi>
+                  <mml:mn>2</mml:mn>
+                </mml:msub>
+                <mml:mo>−</mml:mo>
+                <mml:mrow>
+                  <mml:mo>{</mml:mo>
+                  <mml:mrow>
+                    <mml:mrow>
+                      <mml:mo>(</mml:mo>
+                      <mml:mrow>
+                        <mml:msub>
+                          <mml:mi>h</mml:mi>
+                          <mml:mn>1</mml:mn>
+                        </mml:msub>
+                        <mml:mo>−</mml:mo>
+                        <mml:msub>
+                          <mml:mi>h</mml:mi>
+                          <mml:mn>2</mml:mn>
+                        </mml:msub>
+                      </mml:mrow>
+                      <mml:mo>)</mml:mo>
+                    </mml:mrow>
+                    <mml:mspace width=".2em" />
+                    <mml:mo>×</mml:mo>
+                    <mml:mspace width=".2em" />
+                    <mml:mi>q</mml:mi>
+                  </mml:mrow>
+                  <mml:mo>}</mml:mo>
+                </mml:mrow>
+              </mml:mrow>
+            </mml:mrow>
+          </mml:math>
+          <inline-graphic xlink:type="simple" xlink:href="mml_m3" />
+        </disp-formula>
+        <table-wrap content-type="formula-index" position="float" orientation="portrait">
+          <caption>
+            <title>waarin:</title>
+          </caption>
+          <table width="650">
+            <colgroup span="1">
+              <col width="10%" align="left" valign="top" span="1" />
+              <col width="90%" align="left" valign="top" span="1" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <td rowspan="1" colspan="1">
+                  <italic>h'</italic>
+                  <sub>2</sub>
+                </td>
+                <td rowspan="1" colspan="1">is de voor "carry-over" gecorrigeerde piekhoogte;</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">
+                  <italic>h</italic>
+                  <sub>2</sub>
+                </td>
+                <td rowspan="1" colspan="1">is de gemeten piekhoogte van de te corrigeren piek;</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">
+                  <italic>h</italic>
+                  <sub>1</sub>
+                </td>
+                <td rowspan="1" colspan="1">is de piekhoogte van de piek voorafgaande aan de te corrigeren piek;</td>
+              </tr>
+              <tr>
+                <td rowspan="1" colspan="1">
+                  <italic>q</italic>
+                </td>
+                <td rowspan="1" colspan="1">is het met formule (1) berekende "carry-over" effect.</td>
+              </tr>
+            </tbody>
+          </table>
+        </table-wrap>
+        <p>Correctie voor "carry-over" mag alleen worden toegepast indien de voorafgaande piek binnen het meetgebied valt.</p>
+      </sec>
+      <sec id="sec_6.5">
+        <label>6.5</label>
+        <title>
+          <styled-content style-type="normal">Gegevensverwerking</styled-content>
+        </title>
+        <p>
+          Stel de kalibratiegrafiek op door de piekhoogten van de kalibratieoplossingen, gecorrigeerd voor de piekhoogte van de blanco, uit te zetten tegen de bijbehorende concentraties. Vervolgens kan de concentratie in het te onderzoeken monster worden afgelezen.
+          <break />
+          Toepassing van een microcomputer vereenvoudigt de uitwerking van de uitkomsten.
+        </p>
+      </sec>
+    </sec>
+    <sec id="sec_7">
+      <label>7</label>
+      <title>Storingen</title>
+      <p>
+        Het verdient aanbeveling om het absolute meetsignaal van een zelfde kalibratieoplossing per monsterserie van dag tot dag bij te houden. Aan de hand van verschillen kunnen vele storingen direct worden herkend. Naast foutieve instelling van de apparatuur (zie
+        <xref ref-type="sec" rid="sec_5">hoofdstuk 5</xref>
+        ) kunnen de volgende storingen genoemd worden:
+      </p>
+      <list id="sec_7_list_7" list-type="alpha-lower">
+        <list-item>
+          <label>a.</label>
+          <p>Inwendige vervuiling van het systeem;</p>
+          <p>Bijvoorbeeld kleuraanslag van de componentspecifieke kleur en het ontstaan van een neerslag in de reagensstroom door te snelle opeenvolging van verschillende elkaar "niet-verdragende" reagentia. Het probleem kan worden opgelost door te wassen met een voor dit doel geschikt oplosmiddel.</p>
+        </list-item>
+        <list-item>
+          <label>b.</label>
+          <p>Te lage gevoeligheid;</p>
+          <p>Als oorzaken kunnen worden genoemd:</p>
+          <list id="sec_7_list_7.1" list-type="bullet">
+            <list-item>
+              <label>—</label>
+              <p>te weinig monster door verstopping in de aanvoerslang;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>kwaliteit en/of samenstelling van de reagentia is onjuist;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>verouderde pompslangen;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>vervuiling van de dialysemembraan;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>foutieve instelling van de apparatuur.</p>
+            </list-item>
+          </list>
+        </list-item>
+        <list-item>
+          <label>c.</label>
+          <p>Grote variaties in de gevoeligheid binnen een meetserie en verhoogde ruis;</p>
+          <p>Als oorzaken kunnen worden genoemd:</p>
+          <list id="sec_7_list_7.2" list-type="bullet">
+            <list-item>
+              <label>—</label>
+              <p>verouderde pompslangen;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>lekkage van de dialysemembraan;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>inhomogene monsters en/of reagentia;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>
+                geen goede segmentatie (onregelmatig gasbellenpatroon), hetgeen kan worden verholpen door vervanging van de gasslangen of door toevoeging van een bevochtiger aan de reagentia. Veel gebruikte bevochtigers zijn Brij
+                <sup>R</sup>
+                -35 (bevat fosfaat !) en Aerosol.
+              </p>
+            </list-item>
+          </list>
+        </list-item>
+        <list-item>
+          <label>d.</label>
+          <p>Onjuiste piekpatronen;</p>
+          <p>Dit is herkenbaar aan het traag bereiken van de stationaire toestand en het veelvuldig optreden van "carry-over".</p>
+          <p>Als oorzaken kunnen worden genoemd:</p>
+          <list id="sec_7_list_7.3" list-type="bullet">
+            <list-item>
+              <label>—</label>
+              <p>verkeerde monster/wasvloeistofverhouding;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>vervuild systeem;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>
+                beïnvloeding door een voorgaand monster met een (veel te) hoge concentratie. Sommige componentspecifieke bepalingen zijn erg gevoelig voor "carry-over", zelfs al blijven de monsterconcentraties binnen het gekozen meetgebied. De mogelijkheid bestaat hiervoor een correctiefactor vast te stellen (zie
+                <xref ref-type="sec" rid="sec_6.4">6.4</xref>
+                ).
+              </p>
+            </list-item>
+          </list>
+        </list-item>
+      </list>
+    </sec>
+    <sec id="sec_8">
+      <label>8</label>
+      <title>Meetnauwkeurigheid</title>
+      <p>
+        De betrouwbaarheid van de meetgegevens moet zorgvuldig worden gecontroleerd. Per componentspecifieke bepaling kan hiervan een beeld worden gegeven door de herhaalbaarheid, onjuistheid en gevoeligheid te bepalen. Voor een uitgebreide verhandeling hieromtrent, zie
+        <std>
+          <std-ref>NEN 3114</std-ref>
+        </std>
+        ,
+        <std>
+          <std-ref>NEN 3117</std-ref>
+        </std>
+        en
+        <std>
+          <std-ref>NEN 1047</std-ref>
+        </std>
+        . Frequente interne controles en periodieke externe vergelijkingen (ringonderzoeken) zijn daarbij een goed hulpmiddel. Tevens is het gebruik van controlekaarten voor een voortdurende kwaliteitsbeheersing van belang (zie
+        <std>
+          <std-ref>NPR 6603</std-ref>
+        </std>
+        ).
+        <break />
+        In het geval dat de bepaling van een component voor het eerst plaatsvindt met behulp van een doorstroomanalysesysteem, is het wenselijk dat de verkregen resultaten worden vergeleken met gegevens afkomstig van bepalingsmethoden, die hun bruikbaarheid en betrouwbaarheid voor de desbetreffende component reeds hebben bewezen.
+      </p>
+    </sec>
+    <sec id="sec_9">
+      <label>9</label>
+      <title>Literatuur</title>
+      <ref-list id="sec_bibl" content-type="bibl">
+        <ref id="biblref_1">
+          <label>[1]</label>
+          <mixed-citation xlink:type="simple">Ruzicka, J. and E.H. Hansen, Flow Injection analysis, 2nd edition, Wiley, New York, 1988.</mixed-citation>
+        </ref>
+        <ref id="biblref_2">
+          <label>[2]</label>
+          <mixed-citation xlink:type="simple">Valcárcel, M. and M.D. Luque de Castro, Flow-injection analysis; principles and applications, Ellis Howood/Wiley, Chichester, 1987.</mixed-citation>
+        </ref>
+        <ref id="biblref_3">
+          <label>[3]</label>
+          <mixed-citation xlink:type="simple">Burguera, J.L. (ed.), Flow Injection Atomic Spectroscopy, Wiley, New York, 1989.</mixed-citation>
+        </ref>
+        <ref id="biblref_4">
+          <label>[4]</label>
+          <mixed-citation xlink:type="simple">
+            Furman, W.B, Continuous flow analysis — theory and practice,
+            <break />
+            Clinical and biochemical analysis, volume 3, Marcel Dekker ine., New York.
+          </mixed-citation>
+        </ref>
+      </ref-list>
+    </sec>
+  </body>
+  <back>
+    <app-group>
+      <app id="sec_A">
+        <label>Bijlage</label>
+        <title>Het zelf bouwen en optimaliseren van doorstroomanalysesystemen</title>
+        <p>Recente ontwikkelingen in hogedrukvloeistofchromatografie (HPLC) en doorstroomanalysemethodiek hebben ertoe geleid dat voor vrijwel elk meetprincipe, doorstroomdetectoren commercieel verkrijgbaar zijn. Tevens is er een ruim aanbod aan (slangen)pompen, (injectie)kranen en verbindings- of koppelsystemen. Naast het gebruik van commercieel verkrijgbare, complete CFA- en FIA-systemen is het dan ook zeer wel mogelijk om voor het oplossen van specifieke problemen zelf een dergelijke opstelling uit optimaal gekozen onderdelen samen te stellen.</p>
+        <p>In deze bijlage worden een aantal aanwijzingen gegeven die van nut kunnen zijn bij de bouw en de optimalisatie van dergelijke systemen.</p>
+        <sec id="sec_A.1">
+          <label>A.1</label>
+          <title>Bepaling van de keuze tussen CFA en FIA</title>
+          <p>De vraag of voor een CFA- dan wel een FIA-systeem moet worden gekozen zal zich met name door overwegingen als aanwezige ervaring en het reeds beschikbaar zijn van noodzakelijke onderdelen laten beantwoorden. Principieel verschillen de beide methoden niet, althans als het gesegmenteerd zijn van de vloeistofstroom in CFA buiten beschouwing wordt gelaten. Voor FIA worden in het algemeen de kortste analysetijden gemeld maar de verschillen ten opzichte van CFA zijn gering mede door introductie van geavanceerde detectiemethoden voor CFA.</p>
+        </sec>
+        <sec id="sec_A.2">
+          <label>A.2</label>
+          <title>Systemen met een of meer stromen</title>
+          <p>Voor meting van bijv. pH en soortelijke geleiding, waarbij geen reagens wordt toegevoegd kan worden volstaan met een systeem met één stroom (bij CFA de wasvloeistof/monsterstroom; bij FIA de dragerstroom waarin het monster wordt geïnjecteerd). Algemener toepasbaar zijn systemen met een aantal stromen; de uitvoering is eenvoudig af te leiden uit bestaande reeds geoptimaliseerde handmethoden door deze zodanig te implementeren dat alle bewerkingen, zoals reagenstoevoegingen, in de voorgeschreven volgorde plaats vinden. In CFA wordt de wasvloeistof/monsterstroom bijgemengd, in FIA de dragerstroom. Dit bijmengen gebeurt altijd na de pomp.</p>
+        </sec>
+        <sec id="sec_A.3">
+          <label>A.3</label>
+          <title>Keuze van pomp en verbindingsslangen</title>
+          <p>Als verbindingsslang is PTFE-slang zeer geschikt. Het is inert, heeft een lage wrijvingscoëfficiënt en is in elke gewenste middellijn verkrijgbaar. De keuze van de meest geschikte slang wordt bepaald door het gewenste debiet en hangt samen met de dispersie in het systeem. Dode volumes in koppelstukken, ontgassing, meetcellen en modules vormen de belangrijkste bijdragen tot piekverbreding. Systemen met een dood volume kleiner dan 100 μl en een detectorvolume kleiner dan 10 μl kunnen worden bedreven met een totaal debiet van ongeveer 1 ml/min en een binnenmiddellijn van de slang van 0,3 — 0,5 mm.</p>
+          <p>
+            Debieten van 1 — 2 ml/min of groter zijn nodig als het dode volume van het systeem 0,2 — 0,5 ml is en dat van de detector 20 — 50 μ1; de binnenmiddellijn van de slang ligt dan in de orde van grootte van 0,6 — 1,0 mm.
+            <break />
+            Bij grotere debieten en een groter dood volume van het systeem dienen leidingen met een binnenmiddellijn van ca. 2 mm te worden gekozen. In elk geval moet de binnenmiddellijn zo worden gekozen dat het debiet en de totale weerstand in het systeem tezamen geen voor slangenpompen ontoelaatbare drukopbouw veroorzaken.
+            <break />
+            Pompslangen moeten zo worden gekozen dat de bijdragen van de verschillende deelstromen aan het totale debiet zo is, dat in de hoofdstroom elk reagens in de juiste concentratie beschikbaar is. Voormetingen in het laagste concentratiegebied wordt de hoofdstroom zo groot mogelijk gekozen en elke reagensstroom ongeveer 10 % van het totale debiet. Uitbreiding van de kalibratiecurve naar hogere concentraties kan door ten minste een van de reagentia te verdunnen en het debiet van dat reagens evenredig te verhogen, ten koste van de dragerstroom.
+          </p>
+        </sec>
+        <sec id="sec_A.4">
+          <label>A.4</label>
+          <title>Controle en optimalisering van een opstelling</title>
+          <list id="sec_A.4_list_8" list-type="alpha-lower">
+            <list-item>
+              <label>a.</label>
+              <p>controleer, bij voorkeur door met een injectiespuit vloeistof door (onderdelen van) het systeem te spuiten, of er geen constructiefouten zijn gemaakt waardoor verstoppingen zijn ontstaan.</p>
+            </list-item>
+            <list-item>
+              <label>b.</label>
+              <p>
+                meet het debiet van elk kanaal afzonderlijk en vergelijk met het totale debiet (
+                <italic>Q</italic>
+                ). Herhaal dit regelmatig, bijv. eens per week.
+              </p>
+            </list-item>
+            <list-item>
+              <label>c.</label>
+              <p>ga met behulp van een indicatoroplossing na of de gewenste wachttijden worden gerealiseerd zodat de reacties voldoend volledig verlopen.</p>
+            </list-item>
+            <list-item>
+              <label>d.</label>
+              <p>
+                controleer of de vloeistof
+                <italic>in de stroom</italic>
+                de gewenste temperatuur bereikt; deze temperatuur bepaalt de temperatuur waarop het waterbad moet worden ingesteld, niet omgekeerd. Verschillende constructiematerialen kunnen een hogere of lagere instelling vereisen.
+              </p>
+            </list-item>
+          </list>
+          <p>Ook een slecht geconstrueerd of een niet-goed werkend CFA- of FIA-systeem zal, nadat een monster is geïntroduceerd een signaal geven. Zonder meer elektrisch versterken is niet juist, er moet eerst worden gecontroleerd of een signaal bij benadering overeenkomt met het theoretisch te verwachten signaal.</p>
+          <p>Werkwijze:</p>
+          <list id="sec_A.4_list_9" list-type="alpha-lower">
+            <list-item>
+              <label>a.</label>
+              <p>breng het systeem in werking en stel met wasvloeistof (CFA) of met dragerstroom (FIA) het basissignaal van het systeem in. Stop de pomp.</p>
+            </list-item>
+            <list-item>
+              <label>b.</label>
+              <p>
+                bereid een goed meetbare standaardoplossing en vervang de wasvloeistof, c.q. de dragerstroom door deze standaardoplossing. Stel de pomp in werking en registreer het signaal wanneer de "steady state" toestand is bereikt. Meet tevens de stijgtijd (
+                <italic>t</italic>
+                ); dat is de tijd tussen de eerste signaalverandering en de tijd waarop het signaal 60 % van de eindwaarde heeft bereikt.
+              </p>
+            </list-item>
+            <list-item>
+              <label>c.</label>
+              <p>
+                controleer indien mogelijk of het eindsignaal bij benadering overeenkomt met het theoretisch te verwachten signaal. Voor fotometrische bepalingen is dit te berekenen met behulp van de wet van Bouguer-Lambert-Beer (zie
+                <std>
+                  <std-ref>NPR 6400</std-ref>
+                </std>
+                ) en voor potentiometrische bepalingen met behulp van de wet van Nernst (zie
+                <std>
+                  <std-ref>NPR 6500</std-ref>
+                </std>
+                ).
+              </p>
+            </list-item>
+            <list-item>
+              <label>d.</label>
+              <p>stop de pomp; indien bij een fotometrische bepaling bij "steady state" wordt gemeten, mag het signaal dan niet significant oplopen (te korte reactietijd). Indien dit wel het geval is, is bij een langzame omzetting een te korte verblijftijd of een te lage temperatuur gekozen.</p>
+            </list-item>
+          </list>
+          <non-normative-note>
+            <label>
+              <italic>Opmerking</italic>
+            </label>
+            <p>Bij FIA mag het signaal bij stopzetten van de pomp in het algemeen wel verder oplopen; de zogenoemde "stop-flow FIA" berust hier zelfs op.</p>
+          </non-normative-note>
+          <p>
+            Voor CFA is deze controle voldoende. Vervang de standaardoplossing weer door wasvloeistof en begin met de analyse. De monsteraanzuigtijd bepaalt of signalen bij "steady state" dan wel pieksignalen worden gemeten.
+            <break />
+            Voor FIA wordt nu weer de voor de bepaling gebruikelijke dragerstroom genomen. Injecteer de zojuist bereide standaardoplossing als monster via de monsterlus. De optimale grootte van de monsterlus hangt voor elk systeem af van de configuratie en wordt eenvoudig bepaald door, beginnend met een monsterlus met volume
+            <inline-formula>
+              <mml:math id="mml_m4" overflow="scroll">
+                <mml:mrow>
+                  <mml:mi>V</mml:mi>
+                  <mml:mspace width=".2em" />
+                  <mml:mo>=</mml:mo>
+                  <mml:mspace width=".2em" />
+                  <mml:mrow>
+                    <mml:mrow>
+                      <mml:mn>3</mml:mn>
+                      <mml:mspace width=".2em" />
+                      <mml:mo>×</mml:mo>
+                      <mml:mspace width=".2em" />
+                      <mml:mi>t</mml:mi>
+                    </mml:mrow>
+                    <mml:mspace width=".2em" />
+                    <mml:mo>×</mml:mo>
+                    <mml:mspace width=".2em" />
+                    <mml:mi>Q</mml:mi>
+                  </mml:mrow>
+                </mml:mrow>
+              </mml:math>
+              <inline-graphic xlink:type="simple" xlink:href="mml_m4" />
+            </inline-formula>
+            (
+            <italic>t</italic>
+            is de verblijftijd en
+            <italic>Q</italic>
+            is het debiet), de standaardoplossing te injecteren. Verkort de monsterlus telkens met 20 %, herhaal de injectie en registreer de signalen (zie
+            <xref ref-type="fig" rid="sec_3.3_fig_6">figuur 6</xref>
+            ). In het algemeen wordt de monsterlus zo gekozen dat de piekhoogte 60 % — 70 % (
+            <inline-formula>
+              <mml:math id="mml_m5" overflow="scroll">
+                <mml:mrow>
+                  <mml:mi>D</mml:mi>
+                  <mml:mspace width=".2em" />
+                  <mml:mo>=</mml:mo>
+                  <mml:mspace width=".2em" />
+                  <mml:mrow>
+                    <mml:mn>1,67</mml:mn>
+                    <mml:mo>−</mml:mo>
+                    <mml:mn>1,45</mml:mn>
+                  </mml:mrow>
+                </mml:mrow>
+              </mml:math>
+              <inline-graphic xlink:type="simple" xlink:href="mml_m5" />
+            </inline-formula>
+            ) is van het signaal bij "steady-state". Een grotere lus geeft geen evenredig hoger signaal en verlengt de analysetijd. Een kleinere monsterlus kan worden toegepast om het meetgebied van de methode naar hogere concentraties uit te breiden, in dit geval moet steeds worden gecontroleerd of de kalibratiegrafiek recht blijft ofwel of de reagentiaconcentraties deze uitbreiding toelaten.
+          </p>
+        </sec>
+        <sec id="sec_A.5">
+          <label>A.5</label>
+          <title>De dragerstroom en toepassing van achtergrondconcentraties</title>
+          <p>
+            Vaak zal de dragerstroom of wasvloeistof bestaan uit water. Ideaal is natuurlijk een oplossing die identiek is aan het monster met als enig verschil dat de te bepalen component afwezig is. Zo zal bijv. voor bepalingen in zeewater het gebruik van synthetisch zeewater als dragerstroom, storingen door buikcomponenten grotendeels onderdrukken omdat die dan ook in het basissignaal aanwezig zijn. Uiteraard moeten in dit geval ook de kalibratieoplossingen in deze synthetische matrix worden bereid.
+            <break />
+            Om een aantal redenen kan het nuttig zijn om een kleine hoeveelheid (
+            <italic>
+              c
+              <sub>x</sub>
+            </italic>
+            ) van de te bepalen component als achtergrond aan een van de reagentia toe te voegen:
+          </p>
+          <list id="sec_A.5_list_10" list-type="bullet">
+            <list-item>
+              <label>—</label>
+              <p>bij turbidimetrische bepalingen kan door een dergelijke toevoeging steeds boven de "drempel" waar beneden geen neerslag ontstaat worden gemeten waardoor de detectiegrens wordt verlaagd en de lineariteit voor lage concentraties wordt verbeterd;</p>
+            </list-item>
+            <list-item>
+              <label>—</label>
+              <p>
+                een tweede belangrijke toepassing van een achtergrondconcentratie betreft metingen met ion-selectieve elektroden, zie hiervoor ook
+                <std>
+                  <std-ref>NPR 6500</std-ref>
+                </std>
+                .
+              </p>
+            </list-item>
+          </list>
+          <p>Deze elektroden zijn bij lage concentraties traag en stellen zich moeilijk in. Toevoeging van een goed meetbare hoeveelheid van het te bepalen ion, bij voorkeur aan de ionensterktebuffer (TISAB), zorgt ervoor dat de elektrode een stabiel basissignaal geeft en na een piek weer snel naar dit basissignaal terugkeert.</p>
+          <p>
+            <xref ref-type="fig" rid="sec_A.5_fig_7">Figuur 7</xref>
+            laat zien dat de gevoeligheid afneemt, maar de kalibratiegrafiek rechter wordt naarmate de concentratie van de als achtergrond toegevoegde component toeneemt. Het toevoegen van een hoge achtergrondconcentratie en een forse versterking van het signaal lijkt dus in principe aantrekkelijk omdat de kalibratiegrafiek dan recht wordt en een goede helling krijgt.
+            <break />
+            Deze procedure is echter niet zonder gevaar, omdat het signaal van een eventueel aanwezige storende component mede wordt versterkt.
+          </p>
+          <fig id="sec_A.5_fig_7" position="float" orientation="portrait">
+            <label>Figuur 7</label>
+            <caption>
+              <title>
+                Voorbeelden van kalibratie bij toevoeging van verschillende achtergrondconcentraties
+                <italic>
+                  c
+                  <sub>x</sub>
+                </italic>
+              </title>
+            </caption>
+            <graphic xlink:type="simple" xlink:href="fig_7" position="float" orientation="portrait" />
+          </fig>
+          <p>
+            <bold>Opmerkingen</bold>
+          </p>
+          <list id="sec_A.5_list_11" list-type="order">
+            <list-item>
+              <label>1.</label>
+              <p>In de serie Nederlandse praktijkrichtlijnen verschijnen publikaties van informatief karakter, zoals toelichtingen op normen, constructieve mogelijkheden, werkmethoden en fabricageprocessen. Aan deze publikaties kan geen normatieve waarde worden toegekend.</p>
+            </list-item>
+            <list-item>
+              <label>2.</label>
+              <p>Titels van de vermelde normen:</p>
+              <p>
+                <std>
+                  <std-ref>NEN 1047</std-ref>
+                </std>
+                Receptbladen voor de statistische verwerking van waarnemingen
+                <break />
+                <std>
+                  <std-ref>NEN 3114</std-ref>
+                </std>
+                Terminologie voor het beschrijven van meetnauwkeurigheid
+                <break />
+                <std>
+                  <std-ref>NEN 3117</std-ref>
+                </std>
+                Statistische termen
+                <break />
+                <std>
+                  <std-ref>NPR 6400</std-ref>
+                </std>
+                Water. Algemene richtlijnen voor moleculaire absorptiefotometrie
+                <break />
+                <std>
+                  <std-ref>NPR 6500</std-ref>
+                </std>
+                Water. Grondslagen van en algemene richtlijnen voor het gebruik van ion-selectieve elektroden
+                <break />
+                <std>
+                  <std-ref>NPR 6603</std-ref>
+                </std>
+                Water en slib. Richtlijnen voor interne kwaliteitsbeheersing met controlekaarten bij chemische analyses.
+              </p>
+            </list-item>
+          </list>
+        </sec>
+      </app>
+    </app-group>
+  </back>
+</standard>
