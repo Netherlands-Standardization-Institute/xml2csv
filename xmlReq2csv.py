@@ -57,8 +57,9 @@ class RequirementsProcessor(Processor):
         standard = self.extract_standard(soup)
         sections = soup.find_all("sec")
 
-        def build_output(text, section):
+        def build_output(text: str, section):
             id = uuid.uuid4()
+            text = text.replace("\n", "  ")
             return {"Req_UUID": id, "Text": text, "Standard": standard, "Section": section}
 
         def filter_sections(section):
@@ -94,11 +95,13 @@ class RequirementsProcessor(Processor):
 
 if __name__ == "__main__":
     print("START!")
+    test = True 
     input_file = "data/xml/663.xml"
     # Please change: 
     input_folder = "C:/Users/Semmtech/Downloads/NENHackathon/xml"
     process_all = ProcessAll("output.csv", RequirementsProcessor, input_folder)
-    process_all.convert_all()
+    if not test:
+        process_all.convert_all()
     with open("test.csv", "w", encoding="utf-8") as f:
         writer = DictWriter(f, delimiter=',', lineterminator='\n',
                             fieldnames=["Req_UUID", "Text", "Standard", "Section"])
