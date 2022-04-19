@@ -2,12 +2,12 @@ import codecs
 from csv import DictWriter
 import unicodedata
 import uuid
-
+import copy
 from numpy import full
-
+import re
 from xml2csv import Processor
 import os
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Tag
 
 
 class ProcessAll():
@@ -26,13 +26,25 @@ class ProcessAll():
                 continue
             full_path = f"{self.input_folder}/{file}"
             print(full_path)
-            self.convert_file(full_path)
+            if file.startswith("17"):
+                self.convert_file(full_path)
 
     def convert_file(self, filename):
        
         processor = self.processor_cls(filename, self.writer)
         processor.process()
 
+
+def extract_relevant_text(paragraph: Tag) -> str: 
+    copied_par = copy.copy(paragraph)
+    inner_formulas = copied_par.find_all("inline-formula")
+    for formula in inner_formulas: 
+        formula.decompose()
+    test = copied_par.find_all("inline-formula")
+    if len(test) > 0: 
+        print("WAIT!")
+    text = copied_par.get_text().replace("\n", " ").strip()
+    return re.sub(r" +", " ",text)
 
 class RequirementsProcessor(Processor):
     fieldnames = ["Req_UUID", "Text", "Standard", "Section"]
@@ -41,7 +53,7 @@ class RequirementsProcessor(Processor):
         self.input_file = input_file
         super().__init__(None, writer, job_id)
 
-    def extract_standard(self, soup):
+    def extract_standard(self, soup: BeautifulSoup ):
         ref_undated = soup.find('std-ref', type='undated')
         ref_undated = ref_undated.get_text().upper() if ref_undated else None
         if ref_undated is not None:
@@ -49,14 +61,23 @@ class RequirementsProcessor(Processor):
 
         ref_dated = soup.find('std-ref', type='dated')
         ref_dated = ref_dated.get_text().upper() if ref_dated else None
-        return ref_dated
+        if ref_dated is not None: 
+            return ref_dated
+        
+        other_ref = soup.find('nat-meta').find('std-ref')
+        no_duplicates = soup.find('nat-meta').find_all('std-ref') 
+        
+        if other_ref is not None and no_duplicates[0] == other_ref and len(no_duplicates) == 1: 
+            return other_ref.get_text().upper()
+        return None
 
     def converter(self, data):
         soup = BeautifulSoup(data, 'lxml')
         output = []
         standard = self.extract_standard(soup)
+        if standard is None: 
+            print("Help!")
         sections = soup.find_all("sec")
-
         def build_output(text: str, section):
             id = uuid.uuid4()
             text = text.replace("\n", "  ")
@@ -79,7 +100,7 @@ class RequirementsProcessor(Processor):
                     section_id =  sec['id']
                 except KeyError: 
                     section_id = "-"
-                single_output = build_output(p.get_text(), section_id)
+                single_output = build_output(extract_relevant_text(p), section_id)
                 output.append(single_output)
         return output
 
@@ -95,8 +116,8 @@ class RequirementsProcessor(Processor):
 
 if __name__ == "__main__":
     print("START!")
-    test = True 
-    input_file = "data/xml/663.xml"
+    test = False 
+    input_file = "data/xml/1739.xml"
     # Please change: 
     input_folder = "C:/Users/Semmtech/Downloads/NENHackathon/xml"
     process_all = ProcessAll("output.csv", RequirementsProcessor, input_folder)
