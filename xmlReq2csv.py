@@ -35,19 +35,19 @@ class ProcessAll():
 
         processor = self.processor_cls(filename, self.writer)
         processor.process()
-        converted_dict = [ 
-                [
-                    row["Req_UUID"],
-                    row["AdditionalInfo_Type"], 
-                    row["AdditionalInfo_UUID"], 
-                    row["StandardID"], 
-                    row["SectionID"], 
-                    row["ID"], 
-                    row["AdditionalInfo_Body"]
-                ]
-                for row in processor.extra_output
-            ]
-        extra_writer.writerows(converted_dict)
+#        converted_dict = [ 
+##                [
+#                   row["Req_UUID"],
+#                    row["AdditionalInfo_Type"], 
+#                    row["AdditionalInfo_UUID"], 
+##                    row["StandardID"], 
+#                    row["SectionID"], 
+#                    row["ID"], 
+#                    row["AdditionalInfo_Body"]
+#                ]
+#                for row in processor.extra_output
+#            ]
+#        extra_writer.writerows(converted_dict)
 
 
 AdditionalInfoTypes = ["Standard", "Section",
@@ -87,7 +87,7 @@ class RequirementsProcessor(Processor):
         other_ref = soup.find('nat-meta').find('std-ref')
         no_duplicates = soup.find('nat-meta').find_all('std-ref')
 
-        if other_ref is not None and no_duplicates[0] == other_ref and len(no_duplicates) == 1:
+        if other_ref is not None:
             return other_ref.get_text().upper()
         return None
 
@@ -115,8 +115,7 @@ class RequirementsProcessor(Processor):
         sections = [sec for sec in sections if filter_sections(sec)]
 
         for sec in sections:
-            paragraphs = sec.find("p", recursive=False)
-            paragraphs = []
+            paragraphs = sec.find_all("p")
             for p in paragraphs:
                 try:
                     section_id = sec['id']
